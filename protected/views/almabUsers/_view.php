@@ -17,8 +17,8 @@
 	<?php echo CHtml::encode($data->username); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('user_password')); ?>:</b>
-	<?php echo CHtml::encode($data->user_password); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('password')); ?>:</b>
+	<?php echo CHtml::encode($data->password); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('user_session_time')); ?>:</b>

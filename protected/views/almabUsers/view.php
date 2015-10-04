@@ -24,7 +24,7 @@ $this->menu=array(
 		'user_id',
 		'user_active',
 		'username',
-		'user_password',
+		'password',
 		'user_session_time',
 		'user_session_page',
 		'user_lastvisit',

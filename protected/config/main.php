@@ -6,9 +6,9 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
-        'theme'=>'blackboot',
+        'theme'=>'abound',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'Alma Software Manager',
 
 	// preloading 'log' component
 	'preload'=>array('log'),

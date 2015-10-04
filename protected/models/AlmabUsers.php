@@ -7,7 +7,7 @@
  * @property integer $user_id
  * @property integer $user_active
  * @property string $username
- * @property string $user_password
+ * @property string $password
  * @property integer $user_session_time
  * @property integer $user_session_page
  * @property integer $user_lastvisit
@@ -72,7 +72,7 @@ class AlmabUsers extends CActiveRecord
 		return array(
 			array('user_active, user_session_time, user_session_page, user_lastvisit, user_regdate, user_level, user_posts, user_style, user_new_privmsg, user_unread_privmsg, user_last_privmsg, user_login_tries, user_last_login_try, user_emailtime, user_viewemail, user_attachsig, user_allowhtml, user_allowbbcode, user_allowsmile, user_allowavatar, user_allow_pm, user_allow_viewonline, user_notify, user_notify_pm, user_popup_pm, user_rank, user_avatar_type', 'numerical', 'integerOnly'=>true),
 			array('username', 'length', 'max'=>25),
-			array('user_password, user_actkey, user_newpasswd', 'length', 'max'=>32),
+			array('password, user_actkey, user_newpasswd', 'length', 'max'=>32),
 			array('user_timezone', 'length', 'max'=>5),
 			array('user_lang, user_email, user_aim, user_yim, user_msnm, user_interests', 'length', 'max'=>255),
 			array('user_dateformat', 'length', 'max'=>14),
@@ -82,7 +82,7 @@ class AlmabUsers extends CActiveRecord
 			array('user_sig', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('user_id, user_active, username, user_password, user_session_time, user_session_page, user_lastvisit, user_regdate, user_level, user_posts, user_timezone, user_style, user_lang, user_dateformat, user_new_privmsg, user_unread_privmsg, user_last_privmsg, user_login_tries, user_last_login_try, user_emailtime, user_viewemail, user_attachsig, user_allowhtml, user_allowbbcode, user_allowsmile, user_allowavatar, user_allow_pm, user_allow_viewonline, user_notify, user_notify_pm, user_popup_pm, user_rank, user_avatar, user_avatar_type, user_email, user_icq, user_website, user_from, user_sig, user_sig_bbcode_uid, user_aim, user_yim, user_msnm, user_occ, user_interests, user_actkey, user_newpasswd', 'safe', 'on'=>'search'),
+			array('user_id, user_active, username, password, user_session_time, user_session_page, user_lastvisit, user_regdate, user_level, user_posts, user_timezone, user_style, user_lang, user_dateformat, user_new_privmsg, user_unread_privmsg, user_last_privmsg, user_login_tries, user_last_login_try, user_emailtime, user_viewemail, user_attachsig, user_allowhtml, user_allowbbcode, user_allowsmile, user_allowavatar, user_allow_pm, user_allow_viewonline, user_notify, user_notify_pm, user_popup_pm, user_rank, user_avatar, user_avatar_type, user_email, user_icq, user_website, user_from, user_sig, user_sig_bbcode_uid, user_aim, user_yim, user_msnm, user_occ, user_interests, user_actkey, user_newpasswd', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -106,7 +106,7 @@ class AlmabUsers extends CActiveRecord
 			'user_id' => 'User',
 			'user_active' => 'User Active',
 			'username' => 'Username',
-			'user_password' => 'User Password',
+			'password' => 'User Password',
 			'user_session_time' => 'User Session Time',
 			'user_session_page' => 'User Session Page',
 			'user_lastvisit' => 'User Lastvisit',
@@ -174,7 +174,7 @@ class AlmabUsers extends CActiveRecord
 		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('user_active',$this->user_active);
 		$criteria->compare('username',$this->username,true);
-		$criteria->compare('user_password',$this->user_password,true);
+		$criteria->compare('password',$this->password,true);
 		$criteria->compare('user_session_time',$this->user_session_time);
 		$criteria->compare('user_session_page',$this->user_session_page);
 		$criteria->compare('user_lastvisit',$this->user_lastvisit);
