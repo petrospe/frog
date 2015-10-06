@@ -5,6 +5,7 @@
         <group>
             <file>file:/Library/WebServer/Documents/frog/themes/abound/views/layouts/tpl_navigation.php</file>
             <file>file:/Library/WebServer/Documents/frog/themes/abound/views/layouts/main.php</file>
+            <file>file:/Library/WebServer/Documents/frog/protected/controllers/SiteController.php</file>
             <file>file:/Library/WebServer/Documents/frog/themes/abound/views/site/index.php</file>
             <file>file:/Library/WebServer/Documents/frog/themes/abound/views/site/login.php</file>
         </group>
