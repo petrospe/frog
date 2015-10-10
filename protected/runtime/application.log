@@ -2065,3 +2065,123 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/frog/index.php?r=rights
 ---
+2015/10/10 18:55:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controllers/SiteControler".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php
+---
+2015/10/10 19:16:27 [error] [php] Undefined index: r (/Library/WebServer/Documents/frog/protected/components/RequireLogin.php:11)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/base/CApplication.php(182): CWebApplication->onBeginRequest()
+#1 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/protected/components/RequireLogin.php (11)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/10/10 19:18:54 [error] [php] in_array() expects at least 2 parameters, 1 given (/Library/WebServer/Documents/frog/protected/components/RequireLogin.php:11)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/base/CApplication.php(211): CWebApplication->raiseEvent()
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(182): CWebApplication->onBeginRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/protected/components/RequireLogin.php (11)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/10/10 19:18:55 [error] [php] in_array() expects at least 2 parameters, 1 given (/Library/WebServer/Documents/frog/protected/components/RequireLogin.php:11)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/base/CApplication.php(211): CWebApplication->raiseEvent()
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(182): CWebApplication->onBeginRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/protected/components/RequireLogin.php (11)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/10/10 19:21:11 [error] [php] Undefined index: r (/Library/WebServer/Documents/frog/protected/components/RequireLogin.php:11)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/base/CApplication.php(182): CWebApplication->onBeginRequest()
+#1 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/
+in /Library/WebServer/Documents/frog/protected/components/RequireLogin.php (11)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/10/10 19:24:46 [error] [exception.CException] exception 'CException' with message 'RequireLogin and its behaviors do not have a method or closure named "createUrl".' in /Library/WebServer/Documents/frog/framework/base/CComponent.php:266
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/components/RequireLogin.php(11): CComponent->__call('createUrl', Array)
+#1 /Library/WebServer/Documents/frog/protected/components/RequireLogin.php(11): RequireLogin->createUrl('/site/login')
+#2 /Library/WebServer/Documents/frog/framework/base/CComponent.php(561): RequireLogin->handleBeginRequest(Object(CEvent))
+#3 /Library/WebServer/Documents/frog/framework/base/CApplication.php(211): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#4 /Library/WebServer/Documents/frog/framework/base/CApplication.php(182): CApplication->onBeginRequest(Object(CEvent))
+#5 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/frog/
+---
+2015/10/10 19:33:12 [error] [php] Undefined index: r (/Library/WebServer/Documents/frog/protected/components/RequireLogin.php:11)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/base/CApplication.php(182): CWebApplication->onBeginRequest()
+#1 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/
+in /Library/WebServer/Documents/frog/protected/components/RequireLogin.php (11)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/10/10 20:09:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RAuthorizer.php:305
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/controllers/AssignmentController.php(51): RAuthorizer->getSuperusers()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(1144): AssignmentController->accessRules()
+#2 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('rights')
+#8 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/frog/index.php?r=rights
+---
+2015/10/10 20:47:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RAuthorizer.php:305
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/controllers/AssignmentController.php(51): RAuthorizer->getSuperusers()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(1144): AssignmentController->accessRules()
+#2 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('rights')
+#8 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/frog/index.php?r=rights
+---
+2015/10/10 20:47:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "right".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('right')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=right
+---
+2015/10/11 00:52:55 [error] [exception.CException] exception 'CException' with message 'Property "RWebUser.tableUsers" is not defined.' in /Library/WebServer/Documents/frog/framework/base/CComponent.php:130
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/auth/CWebUser.php(146): CComponent->__get('tableUsers')
+#1 /Library/WebServer/Documents/frog/protected/modules/user/models/User.php(41): CWebUser->__get('tableUsers')
+#2 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(2385): User->tableName()
+#3 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#4 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(212): CActiveRecord->getMetaData()
+#5 /Library/WebServer/Documents/frog/protected/modules/user/components/UserIdentity.php(27): CActiveRecord->__call('notsafe', Array)
+#6 /Library/WebServer/Documents/frog/protected/modules/user/components/UserIdentity.php(27): User->notsafe()
+#7 /Library/WebServer/Documents/frog/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#8 /Library/WebServer/Documents/frog/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#9 /Library/WebServer/Documents/frog/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#10 /Library/WebServer/Documents/frog/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#11 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(94): CModel->validate()
+#12 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#13 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('login')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=site/login
+HTTP_REFERER=http://localhost/frog/index.php?r=site/login
+---
