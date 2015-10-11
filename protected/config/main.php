@@ -79,8 +79,8 @@ return array(
                        'flashErrorKey'=>'RightsError', // Key to use for setting error flash messages. 
 
                        'baseUrl'=>'/rights', // Base URL for Rights. Change if module is nested. 
-                       'layout'=>'rights.views.layouts.main',  // Layout to use for displaying Rights. 
-                       'appLayout'=>'application.views.layouts.main', // Application layout. 
+                       //'layout'=>'rights.views.layouts.main',  // Layout to use for displaying Rights. 
+                       //'appLayout'=>'application.views.layouts.main', // Application layout. 
                        'cssFile'=>'rights.css', // Style sheet file to use for Rights. 
                        'install'=>false,  // Whether to enable installer. 
                        'debug'=>false, 
