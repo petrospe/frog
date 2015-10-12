@@ -3011,3 +3011,94 @@ Stack trace:
 REQUEST_URI=/frog/index.php/rights/authItem/rights/authItem/permissions
 HTTP_REFERER=http://localhost/frog/index.php/rights/authItem/tasks
 ---
+2015/10/12 21:33:33 [error] [exception.CException] exception 'CException' with message 'Filter "rights" is invalid. Controller "AlmabCustomersController" does not have the filter method "filterrights".' in /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php:46
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(72): CInlineFilter::create(Object(AlmabCustomersController), 'rights')
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain::create(Object(AlmabCustomersController), Object(CInlineAction), Array)
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#4 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('AlmabCustomers')
+#5 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/frog/index.php?r=AlmabCustomers
+---
+2015/10/12 21:44:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'You are not aut...')
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('permissions')
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('rights/authItem...')
+#9 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/frog/index.php?r=rights/authItem/permissions
+HTTP_REFERER=http://localhost/frog/index.php
+---
+2015/10/12 21:54:29 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "redirect".' in /Library/WebServer/Documents/frog/framework/base/CComponent.php:266
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(3): CComponent->__call('redirect', Array)
+#1 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(3): CWebApplication->redirect(Array)
+#2 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(354): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#4 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#5 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/frog/index.php
+---
+2015/10/12 21:59:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php:62
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/components/RightsFilter.php(57): RController->accessDenied()
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): RightsFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('AlmabCustomers')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=AlmabCustomers
+HTTP_REFERER=http://localhost/frog/index.php?r=site/login
+---
+2015/10/12 22:06:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php:62
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/components/RightsFilter.php(57): RController->accessDenied()
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): RightsFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('AlmabCustomers')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=AlmabCustomers
+HTTP_REFERER=http://localhost/frog/index.php?r=site/login
+---
+2015/10/12 22:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=users
+---

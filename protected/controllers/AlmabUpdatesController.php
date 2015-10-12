@@ -1,6 +1,6 @@
 <?php
 
-class AlmabUpdatesController extends Controller
+class AlmabUpdatesController extends RController
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning

@@ -57,13 +57,13 @@ return array(
                         'recoveryUrl' => array('/user/recovery'),
 
                         # login form path
-                        'loginUrl' => array('/user/login'),
+                        'loginUrl' => array('/site/login'),
 
                         # page after login
                         'returnUrl' => array('/user/profile'),
 
                         # page after logout
-                        'returnLogoutUrl' => array('/user/login'),
+                        'returnLogoutUrl' => array('/site/login'),
                 ),
 
                 //Modules Rights
@@ -94,7 +94,7 @@ return array(
                         'class'=>'RWebUser',
                         // enable cookie-based authentication
                         'allowAutoLogin'=>true,
-                        'loginUrl'=>array('/user/login'),
+                        'loginUrl'=>array('/site/login'),
                 ),
                 'authManager'=>array(
                         'class'=>'RDbAuthManager',
