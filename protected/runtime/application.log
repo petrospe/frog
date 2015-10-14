@@ -3122,3 +3122,61 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/frog/index.php?r=AlmabCustomers
 ---
+2015/10/14 23:49:17 [error] [exception.CException] exception 'CException' with message 'Property "CPortlet.itemsCssClass" is not defined.' in /Library/WebServer/Documents/frog/framework/base/CComponent.php:173
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWidgetFactory.php(161): CComponent->__set('itemsCssClass', 'table table-hov...')
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(AlmabCustomersController), 'zii.widgets.CPo...', Array)
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CPo...', Array)
+#3 /Library/WebServer/Documents/frog/protected/views/almabCustomers/admin.php(62): CBaseController->widget('zii.widgets.CPo...', Array)
+#4 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#5 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#8 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(144): CController->render('admin', Array)
+#9 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionAdmin()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#15 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#21 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('admin')
+#23 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#24 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#25 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/admin
+HTTP_REFERER=http://localhost/frog/index.php?r=AlmabCustomers
+---
+2015/10/15 00:02:50 [error] [exception.CException] exception 'CException' with message 'AlmabCustomersController contains improperly nested widget tags in its view "/Library/WebServer/Documents/frog/protected/views/almabCustomers/admin.php". A CPortlet widget does not have an endWidget() call.' in /Library/WebServer/Documents/frog/framework/web/CBaseController.php:101
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(144): CController->render('admin', Array)
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionAdmin()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('admin')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/admin
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/index
+---
