@@ -17,6 +17,7 @@
 	)); ?></p>
 
 	<?php $this->widget('zii.widgets.grid.CGridView', array(
+            'itemsCssClass'=>'table table-striped table-bordered table-hover',
 	    'dataProvider'=>$dataProvider,
 	    'template'=>'{items}',
 	    'emptyText'=>Rights::t('core', 'No operations found.'),

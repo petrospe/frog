@@ -12,6 +12,7 @@
 	</p>
 
 	<?php $this->widget('zii.widgets.grid.CGridView', array(
+            'itemsCssClass'=>'table table-striped table-bordered table-hover',
 	    'dataProvider'=>$dataProvider,
 	    'template'=>"{items}\n{pager}",
 	    'emptyText'=>Rights::t('core', 'No users found.'),

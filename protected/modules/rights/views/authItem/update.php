@@ -24,6 +24,7 @@
 				<h4><?php echo Rights::t('core', 'Parents'); ?></h4>
 
 				<?php $this->widget('zii.widgets.grid.CGridView', array(
+                                        'itemsCssClass'=>'table table-striped table-bordered table-hover',
 					'dataProvider'=>$parentDataProvider,
 					'template'=>'{items}',
 					'hideHeader'=>true,
@@ -60,6 +61,7 @@
 				<h4><?php echo Rights::t('core', 'Children'); ?></h4>
 
 				<?php $this->widget('zii.widgets.grid.CGridView', array(
+                                        'itemsCssClass'=>'table table-striped table-bordered table-hover',
 					'dataProvider'=>$childDataProvider,
 					'template'=>'{items}',
 					'hideHeader'=>true,
