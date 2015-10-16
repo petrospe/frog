@@ -51,13 +51,35 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ContractStartDate'); ?>
-		<?php echo $form->textField($model,'ContractStartDate'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                    'name'=>'ContractStartDate',
+                    'attribute'=>'ContractStartDate',
+                    'model'=>$model,
+                    'options'=>array(
+                        'dateFormat'=>'yy-mm-dd',
+                        'altFormat'=>'yy-mm-dd',
+                        'changeMonth'=>true,
+                        'changeYear'=>true,
+                        'appendText'=>'yyyy-mm-dd',
+                    ),
+                    )); ?>
 		<?php echo $form->error($model,'ContractStartDate'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ContractEndDate'); ?>
-		<?php echo $form->textField($model,'ContractEndDate'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                    'name'=>'ContractEndDate',
+                    'attribute'=>'ContractEndDate',
+                    'model'=>$model,
+                    'options'=>array(
+                        'dateFormat'=>'yy-mm-dd',
+                        'altFormat'=>'yy-mm-dd',
+                        'changeMonth'=>true,
+                        'changeYear'=>true,
+                        'appendText'=>'yyyy-mm-dd',
+                    ),
+                    )); ?>
 		<?php echo $form->error($model,'ContractEndDate'); ?>
 	</div>
 
