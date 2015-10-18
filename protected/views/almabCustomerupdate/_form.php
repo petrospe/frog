@@ -33,7 +33,18 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'condate'); ?>
-		<?php echo $form->textField($model,'condate'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                    'name'=>'condate',
+                    'attribute'=>'condate',
+                    'model'=>$model,
+                    'options'=>array(
+                        'dateFormat'=>'yy-mm-dd',
+                        'altFormat'=>'yy-mm-dd',
+                        'changeMonth'=>true,
+                        'changeYear'=>true,
+                        'appendText'=>'yyyy-mm-dd',
+                    ),
+                    )); ?>
 		<?php echo $form->error($model,'condate'); ?>
 	</div>
 

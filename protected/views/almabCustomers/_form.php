@@ -39,13 +39,35 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'updatefrom'); ?>
-		<?php echo $form->textField($model,'updatefrom'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                    'name'=>'updatefrom',
+                    'attribute'=>'updatefrom',
+                    'model'=>$model,
+                    'options'=>array(
+                        'dateFormat'=>'yy-mm-dd',
+                        'altFormat'=>'yy-mm-dd',
+                        'changeMonth'=>true,
+                        'changeYear'=>true,
+                        'appendText'=>'yyyy-mm-dd',
+                    ),
+                    )); ?>
 		<?php echo $form->error($model,'updatefrom'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'updateto'); ?>
-		<?php echo $form->textField($model,'updateto'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                    'name'=>'updateto',
+                    'attribute'=>'updateto',
+                    'model'=>$model,
+                    'options'=>array(
+                        'dateFormat'=>'yy-mm-dd',
+                        'altFormat'=>'yy-mm-dd',
+                        'changeMonth'=>true,
+                        'changeYear'=>true,
+                        'appendText'=>'yyyy-mm-dd',
+                    ),
+                    )); ?>
 		<?php echo $form->error($model,'updateto'); ?>
 	</div>
 

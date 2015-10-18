@@ -29,6 +29,7 @@ class AlmabUpdates extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+                        array('file, version, upddate, requires','required'),
 			array('CustomerId', 'numerical', 'integerOnly'=>true),
 			array('file', 'length', 'max'=>255),
 			array('version, requires', 'length', 'max'=>20),

@@ -31,6 +31,7 @@ class AlmabContracts extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+                        array('CustomerName, CustomerEMail, SerialNumber, almUsers, almVersion, ContractStartDate, ContractEndDate','required'),
 			array('almUsers, almVersion', 'numerical', 'integerOnly'=>true),
 			array('CustomerName, CustomerEMail', 'length', 'max'=>250),
 			array('SerialNumber', 'length', 'max'=>100),

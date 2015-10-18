@@ -40,3 +40,6 @@ create table Rights
 	primary key (itemname),
 	foreign key (itemname) references AuthItem (name) on delete cascade on update cascade
 );
+
+INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES ('Admin', '1', NULL, 'N');
+INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES ('Admin', 0, 'Admin', NULL, 'N;');

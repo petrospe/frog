@@ -30,6 +30,7 @@ class AlmabCustomers extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+                        array('descr, email, guid, updatefrom, updateto, dbserial', 'required'),
 			array('descr', 'length', 'max'=>255),
 			array('email', 'length', 'max'=>100),
 			array('guid, dbserial', 'length', 'max'=>50),
