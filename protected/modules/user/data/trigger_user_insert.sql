@@ -1,8 +1,14 @@
 DROP TRIGGER user_insert;
 
+delimiter $$
 CREATE TRIGGER user_insert
-AFTER INSERT
-   ON almab_customers FOR EACH ROW BEGIN
-   INSERT INTO `users` (`username`, `password`, `email`, `superuser`, `status`) VALUES (NEW.email, md5(NEW.email), NEW.email, 0, 1);
-   INSERT INTO `profiles` (`lastname`, `firstname`) VALUES (SUBSTRING_INDEX(NEW.descr, ' ', 1), SUBSTRING(NEW.descr, LOCATE(' ' , NEW.descr)+1));
+AFTER INSERT ON almab_customers 
+FOR EACH ROW
+    BEGIN
+    SET @new_email = NEW.email;
+    SET @new_descr = NEW.descr;
+   INSERT INTO `users` (`username`, `password`, `email`, `superuser`, `status`) VALUES (@new_email, md5(@new_email), @new_email, 0, 1);
+   INSERT INTO `profiles` (`lastname`, `firstname`) VALUES (SUBSTRING_INDEX(@new_descr, ' ', 1), SUBSTRING(@new_descr, LOCATE(' ' , @new_descr)+1));
+   
 END $$
+delimiter ;;

@@ -3898,3 +3898,33 @@ Stack trace:
 REQUEST_URI=/frog/index.php?r=almabCustomers/create
 HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
 ---
+2015/10/19 11:53:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'email' cannot be null. The SQL statement executed was: INSERT INTO `almab_customers` (`descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in /var/www/frog/protected/controllers/AlmabCustomersController.php (74)
+in /var/www/frog/protected/modules/rights/components/RController.php (36)
+in /var/www/frog/index.php (13)
+2015/10/19 11:53:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'email' cannot be null. The SQL statement executed was: INSERT INTO `almab_customers` (`descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in /var/www/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /var/www/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /var/www/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /var/www/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /var/www/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /var/www/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /var/www/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /var/www/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
