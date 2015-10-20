@@ -49,6 +49,8 @@ class AlmabCustomers extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'almabcustomerupdate' => array(self::HAS_MANY, 'AlmabCustomerupdate', 'customerid'),
+                    'almabupdates' => array(self::HAS_MANY, 'AlmabUpdates', 'CustomerId'),
 		);
 	}
 
