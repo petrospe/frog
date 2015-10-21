@@ -33,5 +33,9 @@
 	<?php echo CHtml::encode($data->dbserial); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('iscustom')); ?>:</b>
+	<?php echo CHtml::encode($data->iscustom); ?>
+	<br />
+
 
 </div>

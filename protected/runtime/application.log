@@ -4042,3 +4042,30 @@ Stack trace:
 #14 {main}
 REQUEST_URI=/frog/index.php?r=user/login
 ---
+2015/10/21 22:09:15 [error] [php] Use of undefined constant iscustom - assumed 'iscustom' (/Library/WebServer/Documents/frog/protected/models/AlmabCustomers.php:99)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): AlmabCustomersController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): AlmabCustomersController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): AlmabCustomersController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(144): AlmabCustomersController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionAdmin()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): AlmabCustomersController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): RightsFilter->filter()
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): AlmabCustomersController->filterRights()
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): AlmabCustomersController->filterAccessControl()
+#14 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#16 /Library/WebServer/Documents/frog/framework/web/CController.php(265): AlmabCustomersController->runActionWithFilters()
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): AlmabCustomersController->run()
+#18 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#20 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=almabCustomers/admin
+in /Library/WebServer/Documents/frog/protected/models/AlmabCustomers.php (99)
+in /Library/WebServer/Documents/frog/protected/views/almabCustomers/admin.php (46)
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (144)

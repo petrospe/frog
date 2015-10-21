@@ -28,5 +28,6 @@ $this->menu=array(
 		'updatefrom',
 		'updateto',
 		'dbserial',
+                'iscustom',
 	),
 )); ?>

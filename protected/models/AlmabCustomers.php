@@ -37,7 +37,7 @@ class AlmabCustomers extends CActiveRecord
 			array('updatefrom, updateto', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, descr, email, guid, updatefrom, updateto, dbserial', 'safe', 'on'=>'search'),
+			array('id, descr, email, guid, updatefrom, updateto, dbserial, iscustom', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,6 +67,7 @@ class AlmabCustomers extends CActiveRecord
 			'updatefrom' => 'Updatefrom',
 			'updateto' => 'Updateto',
 			'dbserial' => 'Dbserial',
+                        'iscustom' => 'IsCustom',
 		);
 	}
 
@@ -95,6 +96,7 @@ class AlmabCustomers extends CActiveRecord
 		$criteria->compare('updatefrom',$this->updatefrom,true);
 		$criteria->compare('updateto',$this->updateto,true);
 		$criteria->compare('dbserial',$this->dbserial,true);
+                $criteria->compare('iscustom',$this->iscustom,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -5,7 +5,6 @@
         <group>
             <file>file:/Library/WebServer/Documents/frog/themes/abound/views/layouts/tpl_navigation.php</file>
             <file>file:/Library/WebServer/Documents/frog/protected/config/main.php</file>
-            <file>file:/Library/WebServer/Documents/frog/protected/models/AlmabCustomers.php</file>
             <file>file:/Library/WebServer/Documents/frog/themes/abound/views/site/pages/tables.php</file>
         </group>
     </open-files>

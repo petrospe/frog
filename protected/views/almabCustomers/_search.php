@@ -46,6 +46,11 @@
 		<?php echo $form->textField($model,'dbserial',array('size'=>50,'maxlength'=>50)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'iscustom'); ?>
+		<?php echo $form->checkbox($model,'iscustom'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

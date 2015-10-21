@@ -76,6 +76,12 @@
 		<?php echo $form->textField($model,'dbserial',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'dbserial'); ?>
 	</div>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'iscustom'); ?>
+		<?php echo $form->checkbox($model,'iscustom'); ?>
+		<?php echo $form->error($model,'iscustom'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
