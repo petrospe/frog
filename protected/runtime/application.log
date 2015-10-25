@@ -4069,3 +4069,11 @@ REQUEST_URI=/frog/index.php?r=almabCustomers/admin
 in /Library/WebServer/Documents/frog/protected/models/AlmabCustomers.php (99)
 in /Library/WebServer/Documents/frog/protected/views/almabCustomers/admin.php (46)
 in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (144)
+2015/10/25 10:25:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/index".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=user/index
+---
