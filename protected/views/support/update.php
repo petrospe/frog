@@ -3,7 +3,7 @@
 /* @var $model Support */
 
 $this->breadcrumbs=array(
-	'Supports'=>array('index'),
+	'Support'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
 	'Update',
 );

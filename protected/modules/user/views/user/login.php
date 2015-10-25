@@ -40,9 +40,11 @@ $this->breadcrumbs=array(
             <?php echo CHtml::activeLabelEx($model,'password'); ?>
             <?php echo CHtml::activePasswordField($model,'password') ?>
             <?php echo CHtml::error($model,'password'); ?>
+            <!--
             <p class="hint">
                 Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
             </p>
+            -->
         </div>
     
         <div class="row rememberMe">
