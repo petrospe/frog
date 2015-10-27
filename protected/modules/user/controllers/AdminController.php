@@ -1,6 +1,6 @@
 <?php
 
-class AdminController extends Controller
+class AdminController extends RController
 {
 	public $defaultAction = 'admin';
 	public $layout='//layouts/column2';
@@ -13,6 +13,7 @@ class AdminController extends Controller
 	public function filters()
 	{
 		return CMap::mergeArray(parent::filters(),array(
+                    'rights', // perform access control for CRUD operations
 			'accessControl', // perform access control for CRUD operations
 		));
 	}

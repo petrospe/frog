@@ -1,6 +1,6 @@
 <?php
 
-class UserController extends Controller
+class UserController extends RController
 {
 	/**
 	 * @var CActiveRecord the currently loaded data model instance.
@@ -13,6 +13,7 @@ class UserController extends Controller
 	public function filters()
 	{
 		return CMap::mergeArray(parent::filters(),array(
+                    'rights', // perform access control for CRUD operations
 			'accessControl', // perform access control for CRUD operations
 		));
 	}

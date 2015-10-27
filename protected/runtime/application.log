@@ -4364,3 +4364,11 @@ Stack trace:
 REQUEST_URI=/frog/index.php?r=user
 HTTP_REFERER=http://localhost/frog/index.php?r=support
 ---
+2015/10/26 21:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=users
+---
