@@ -4372,3 +4372,65 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/frog/index.php?r=users
 ---
+2015/10/30 11:07:16 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/user/index".' in /var/www/frog/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/frog/framework/web/CController.php(782): CController->renderPartial('/user/index', Array, true)
+#1 /var/www/frog/protected/modules/user/controllers/DefaultController.php(22): CController->render('/user/index', Array)
+#2 /var/www/frog/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/frog/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('user')
+#8 /var/www/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/frog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/frog/index.php?r=user
+---
+2015/10/30 11:29:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/index".' in /var/www/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#1 /var/www/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=user/index
+---
+2015/10/30 11:29:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/index.php".' in /var/www/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index.php')
+#1 /var/www/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=user/index.php
+---
+2015/10/30 12:31:23 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/user/index".' in /var/www/frog/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/frog/framework/web/CController.php(782): CController->renderPartial('/user/index', Array, true)
+#1 /var/www/frog/protected/modules/user/controllers/DefaultController.php(22): CController->render('/user/index', Array)
+#2 /var/www/frog/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/frog/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('user')
+#8 /var/www/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/frog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/frog/index.php?r=user
+---
+2015/10/30 12:35:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/recovert".' in /var/www/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('user/recovert')
+#1 /var/www/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=user/recovert
+---
+2015/10/30 12:35:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/recoverty".' in /var/www/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('user/recoverty')
+#1 /var/www/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=user/recoverty
+---

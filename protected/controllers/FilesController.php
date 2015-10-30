@@ -1,6 +1,6 @@
 <?php
 
-class FilesController extends Controller
+class FilesController extends RController
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -16,6 +16,7 @@ class FilesController extends Controller
 		return array(
 			'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
+                        'rights', // perform access control for CRUD operations
 		);
 	}
 
