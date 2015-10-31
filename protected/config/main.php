@@ -90,6 +90,12 @@ return array(
 	// application components
 	'components'=>array(
 
+                //forces user to login after 20 minutes of inactivity.  
+                'session' => array(
+                   'class' => 'CDbHttpSession',
+                   'timeout' => 1200,
+                ),
+
 		'user'=>array(
                         'class'=>'RWebUser',
                         // enable cookie-based authentication
@@ -142,6 +148,13 @@ return array(
 		),
 
 	),
+    
+        'behaviors' => array(
+            'onBeginRequest' => array(
+                'class' => 'application.components.RequireLogin'
+            )
+        ),
+
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']

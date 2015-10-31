@@ -13,7 +13,7 @@ class UserController extends RController
 	public function filters()
 	{
 		return CMap::mergeArray(parent::filters(),array(
-                    'rights', // perform access control for CRUD operations
+                        'rights', // perform access control for CRUD operations
 			'accessControl', // perform access control for CRUD operations
 		));
 	}
