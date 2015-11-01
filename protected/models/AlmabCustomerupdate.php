@@ -12,6 +12,9 @@
  */
 class AlmabCustomerupdate extends CActiveRecord
 {
+         public $almabcustomers_search;
+         public $almabupdates_search;
+         
 	/**
 	 * @return string the associated database table name
 	 */
@@ -33,7 +36,7 @@ class AlmabCustomerupdate extends CActiveRecord
 			array('condate', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, customerid, updateid, condate, action', 'safe', 'on'=>'search'),
+			array('id, customerid, updateid, condate, action, almabcustomers_search, almabupdates_search', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -79,17 +82,38 @@ class AlmabCustomerupdate extends CActiveRecord
 	public function search()
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
-
+            
+                $this->tableAlias = 't';
+            
 		$criteria=new CDbCriteria;
+                $criteria->with = array('almabcustomers','almabupdates'); // eager load related records
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('customerid',$this->customerid);
-		$criteria->compare('updateid',$this->updateid);
-		$criteria->compare('condate',$this->condate,true);
-		$criteria->compare('action',$this->action,true);
-
+		$criteria->compare('t.id',$this->id);
+		$criteria->compare('t.customerid',$this->customerid);
+		$criteria->compare('t.updateid',$this->updateid);
+		$criteria->compare('t.condate',$this->condate,true);
+		$criteria->compare('t.action',$this->action,true);
+                $criteria->compare('almabcustomers.descr', $this->almabcustomers_search, true ); // related field
+                $criteria->compare('almabupdates.version', $this->almabupdates_search, true ); // related field
+                
+                $sort = new CSort();
+		$sort->attributes = array(			
+				'almabcustomers.descr' => // sort rules for almabcustomers.descr
+					array(
+						'asc'  => 'almabcustomers.descr',
+						'desc' => 'almabcustomers.descr DESC',
+					),
+				'almabupdates.version' => // sort rules for almabupdates.version
+					array(
+						'asc'  => 'almabupdates.version',
+						'desc' => 'almabupdates.version DESC',
+					),
+                                '*', // add other columns
+			);
+                
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'sort' => $sort,
 		));
 	}
 

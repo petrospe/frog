@@ -16,6 +16,8 @@ class AlmabCustomerrequest extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+        public $almabcustomerrequest_search;
+    
 	public function tableName()
 	{
 		return 'almab_customerrequest';
@@ -35,7 +37,7 @@ class AlmabCustomerrequest extends CActiveRecord
 			array('RequestTime', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, Request, SerialNumber, Version, Response, RequestTime', 'safe', 'on'=>'search'),
+			array('id, Request, SerialNumber, Version, Response, RequestTime, almabcustomerrequest_search', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,6 +49,7 @@ class AlmabCustomerrequest extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'almabcustomerrequest' => array(self::BELONGS_TO, 'AlmabCustomers', 'SerialNumber'),
 		);
 	}
 
@@ -82,16 +85,29 @@ class AlmabCustomerrequest extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
+                $criteria->with = array('almabcustomerrequest'); // eager load related records
+                
 		$criteria->compare('id',$this->id);
 		$criteria->compare('Request',$this->Request,true);
 		$criteria->compare('SerialNumber',$this->SerialNumber,true);
 		$criteria->compare('Version',$this->Version,true);
 		$criteria->compare('Response',$this->Response,true);
 		$criteria->compare('RequestTime',$this->RequestTime,true);
+                $criteria->compare('almabcustomerrequest.descr', $this->almabcustomerrequest_search, true ); // related field
 
+                $sort = new CSort();
+		$sort->attributes = array(			
+				'almabcustomerrequest.descr' => // sort rules for almabcustomers.descr
+					array(
+						'asc'  => 'almabcustomerrequest.descr',
+						'desc' => 'almabcustomerrequest.descr DESC',
+					),
+                                '*', // add other columns
+			);
+                
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'sort' => $sort,
 		));
 	}
 

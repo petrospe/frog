@@ -49,6 +49,10 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'id',
 		'Request',
 		'SerialNumber',
+                array(
+                    'name'=>'almabcustomerrequest.descr',
+                    'filter'=>CHtml::activeTextField($model,'almabcustomerrequest_search'),
+                    ),
 		'Version',
 		'Response',
 		'RequestTime',

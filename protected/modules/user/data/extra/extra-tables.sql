@@ -39,3 +39,5 @@ CREATE TABLE IF NOT EXISTS `files_support` (
   `support_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+alter table almab_customerrequest convert to character set greek collate greek_general_ci;

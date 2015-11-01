@@ -160,6 +160,8 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'info@petrospe.org',
+                'registrationUrl'=>'user/registration', //Registration page url
+                'recoveryUrl'=>'user/recovery', //Recovery or change password page url
 	),
 );

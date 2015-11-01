@@ -47,10 +47,16 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-                'almabcustomers.descr',
+                array(
+                    'name'=>'almabcustomers.descr',
+                    'filter'=>CHtml::activeTextField($model,'almabcustomers_search'),
+                    ),
+                array(
+                    'name'=>'almabupdates.version',
+                    'filter'=>CHtml::activeTextField($model,'almabupdates_search'),
+                    ),
 //		'customerid',
 //		'updateid',
-                'almabupdates.version',
 		'condate',
 		'action',
 		array(
