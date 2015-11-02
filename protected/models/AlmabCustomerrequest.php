@@ -84,15 +84,17 @@ class AlmabCustomerrequest extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
+                $this->tableAlias = 't';
+                
 		$criteria=new CDbCriteria;
                 $criteria->with = array('almabcustomerrequest'); // eager load related records
                 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('Request',$this->Request,true);
-		$criteria->compare('SerialNumber',$this->SerialNumber,true);
-		$criteria->compare('Version',$this->Version,true);
-		$criteria->compare('Response',$this->Response,true);
-		$criteria->compare('RequestTime',$this->RequestTime,true);
+		$criteria->compare('t.id',$this->id);
+		$criteria->compare('t.Request',$this->Request,true);
+		$criteria->compare('t.SerialNumber',$this->SerialNumber,true);
+		$criteria->compare('t.Version',$this->Version,true);
+		$criteria->compare('t.Response',$this->Response,true);
+		$criteria->compare('t.RequestTime',$this->RequestTime,true);
                 $criteria->compare('almabcustomerrequest.descr', $this->almabcustomerrequest_search, true ); // related field
 
                 $sort = new CSort();

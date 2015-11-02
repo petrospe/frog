@@ -47,7 +47,14 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-		'ContractId',
+		/*
+                'ContractId',
+                 * 
+                 */
+                array(
+                    'name'=>'almabcontractslog.CustomerName',
+                    'filter'=>CHtml::activeTextField($model,'almabcontractslog_search'),
+                    ),
 		'DateOfUse',
 		'MacAddress',
 		'ComputerName',

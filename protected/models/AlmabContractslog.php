@@ -17,6 +17,9 @@ class AlmabContractslog extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+        
+        public $almabcontractslog_search;
+        
 	public function tableName()
 	{
 		return 'almab_contractslog';
@@ -35,7 +38,7 @@ class AlmabContractslog extends CActiveRecord
 			array('DateOfUse', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, ContractId, DateOfUse, MacAddress, ComputerName, UserName, AccessGranted', 'safe', 'on'=>'search'),
+			array('id, ContractId, DateOfUse, MacAddress, ComputerName, UserName, AccessGranted, almabcontractslog_search', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,7 +50,7 @@ class AlmabContractslog extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                    'almabcontracts' => array(self::BELONGS_TO, 'AlmabContracts', 'CustomerId'),
+                    'almabcontractslog' => array(self::BELONGS_TO, 'AlmabContracts', 'ContractId'),
 		);
 	}
 
@@ -83,18 +86,33 @@ class AlmabContractslog extends CActiveRecord
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
+                $this->tableAlias = 't';
+            
 		$criteria=new CDbCriteria;
+                $criteria->with = array('almabcontractslog'); // eager load related records
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('ContractId',$this->ContractId);
-		$criteria->compare('DateOfUse',$this->DateOfUse,true);
-		$criteria->compare('MacAddress',$this->MacAddress,true);
-		$criteria->compare('ComputerName',$this->ComputerName,true);
-		$criteria->compare('UserName',$this->UserName,true);
-		$criteria->compare('AccessGranted',$this->AccessGranted);
+		$criteria->compare('t.id',$this->id);
+		$criteria->compare('t.ContractId',$this->ContractId);
+		$criteria->compare('t.DateOfUse',$this->DateOfUse,true);
+		$criteria->compare('t.MacAddress',$this->MacAddress,true);
+		$criteria->compare('t.ComputerName',$this->ComputerName,true);
+		$criteria->compare('t.UserName',$this->UserName,true);
+		$criteria->compare('t.AccessGranted',$this->AccessGranted);
+                $criteria->compare('almabcontractslog.CustomerName', $this->almabcontractslog_search, true ); // related field
 
+                $sort = new CSort();
+		$sort->attributes = array(			
+				'almabcontractslog.CustomerName' => // sort rules for almabcustomers.descr
+					array(
+						'asc'  => 'almabcontractslog.CustomerName',
+						'desc' => 'almabcontractslog.CustomerName DESC',
+					),
+                                '*', // add other columns
+			);
+                
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'sort' => $sort,
 		));
 	}
 
