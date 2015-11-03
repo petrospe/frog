@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Library/WebServer/Documents/frog/themes/abound/views/layouts/tpl_navigation.php</file>
-            <file>file:/Library/WebServer/Documents/frog/protected/config/main.php</file>
-            <file>file:/Library/WebServer/Documents/frog/protected/models/AlmabCustomers.php</file>
-            <file>file:/Library/WebServer/Documents/frog/protected/models/AlmabCustomerrequest.php</file>
-            <file>file:/Library/WebServer/Documents/frog/protected/views/almabCustomerrequest/admin.php</file>
+            <file>file:/var/www/frog/protected/modules/user/UserModule.php</file>
+            <file>file:/var/www/frog/themes/abound/views/site/pages/tables.php</file>
+            <file>file:/var/www/frog/protected/config/main.php</file>
+            <file>file:/var/www/frog/themes/abound/views/layouts/tpl_navigation.php</file>
         </group>
     </open-files>
 </project-private>

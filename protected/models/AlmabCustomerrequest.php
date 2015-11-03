@@ -49,7 +49,7 @@ class AlmabCustomerrequest extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                    'almabcustomerrequest' => array(self::BELONGS_TO, 'AlmabCustomers', 'SerialNumber'),
+                    'almabcustomerrequest' => array(self::BELONGS_TO,'AlmabCustomers','', 'on'=>'t.SerialNumber = almabcustomerrequest.guid'),
 		);
 	}
 
