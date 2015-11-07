@@ -3,7 +3,7 @@
 /* @var $model Support */
 /* @var $form CActiveForm */
 ?>
-
+<script src="//cdn.ckeditor.com/4.5.4/standard/ckeditor.js"></script>
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -21,13 +21,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'description'); ?>
-		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'description',array('style'=>'width: 600px;', 'rows'=>3, 'cols'=>150)); ?>
 		<?php echo $form->error($model,'description'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'solution'); ?>
-		<?php echo $form->textArea($model,'solution',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'solution',array('id'=>'solution_editor')); ?>
 		<?php echo $form->error($model,'solution'); ?>
 	</div>
 
@@ -36,5 +36,9 @@
 	</div>
 
 <?php $this->endWidget(); ?>
+        
+<script type="text/javascript">
+    CKEDITOR.replace( 'solution_editor' );
+</script>
 
 </div><!-- form -->

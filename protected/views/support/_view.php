@@ -14,7 +14,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('solution')); ?>:</b>
-	<?php echo CHtml::encode($data->solution); ?>
+	<?php echo ($data->solution); ?>
 	<br />
 
 
