@@ -42,7 +42,7 @@ class Files extends CActiveRecord
 			array('create_date, modification_date', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, filename, filename_sys, file_type, file_size, file_path, file_category_id, create_date, modification_date', 'safe', 'on'=>'search'),
+			array('id, filename, filename_sys, file_type, file_size, file_path, file_category_id, file_support_id, file_customer_id,create_date, modification_date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -70,6 +70,8 @@ class Files extends CActiveRecord
 			'file_size' => 'File Size',
 			'file_path' => 'File Path',
 			'file_category_id' => 'File Category',
+                        'file_support_id' => 'Support',
+                        'file_customer_id' => 'Customer',
 			'create_date' => 'Create Date',
 			'modification_date' => 'Modification Date',
 		);
@@ -99,7 +101,9 @@ class Files extends CActiveRecord
 		$criteria->compare('file_type',$this->file_type,true);
 		$criteria->compare('file_size',$this->file_size,true);
 		$criteria->compare('file_path',$this->file_path,true);
-		$criteria->compare('file_category_id',$this->file_category_id);
+		$criteria->compare('file_category_id',$this->file_category_id,true);
+                $criteria->compare('file_category_id',$this->file_support_id,true);
+                $criteria->compare('file_category_id',$this->file_customer_id,true);
 		$criteria->compare('create_date',$this->create_date,true);
 		$criteria->compare('modification_date',$this->modification_date,true);
 

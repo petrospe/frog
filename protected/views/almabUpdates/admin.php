@@ -51,7 +51,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'version',
 		'upddate',
 		'requires',
-		'CustomerId',
+//		'CustomerId',
+                'file_path',
 		array(
 			'class'=>'CButtonColumn',
 		),

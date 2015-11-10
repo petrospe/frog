@@ -42,7 +42,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'files-grid',
-        'itemsCssClass'=>'table table-striped table-bordered table-hover',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
@@ -54,6 +53,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'file_path',
 		/*
 		'file_category_id',
+		'file_support_id',
+		'file_customer_id',
 		'create_date',
 		'modification_date',
 		*/

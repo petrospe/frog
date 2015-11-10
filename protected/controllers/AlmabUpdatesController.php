@@ -71,6 +71,18 @@ class AlmabUpdatesController extends RController
 		if(isset($_POST['AlmabUpdates']))
 		{
 			$model->attributes=$_POST['AlmabUpdates'];
+                        $uploadFile = CUploadedFile::getInstance($model, 'file');
+                        if(!empty($uploadFile))
+                        {
+                        $extension=$uploadFile->getExtensionName();
+                        $uploadFile->saveAs(Yii::app()->basePath.'../../../clientupd/msi/'.$uploadFile);
+                        $model->file_path=('http://www.nbalma.gr/clientupd/msi/');
+                        $model->file_type=$uploadFile->getType();
+                        $model->file_size=$uploadFile->getSize();
+                        $model->file = $uploadFile;
+                        }
+                        
+                        
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}

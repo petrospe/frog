@@ -13,6 +13,7 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
+        'htmlOptions' => array('file' => 'multipart/form-data'),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -21,8 +22,14 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'file'); ?>
-		<?php echo $form->textField($model,'file',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo CHtml::activeFileField($model,'file'); ?>
 		<?php echo $form->error($model,'file'); ?>
+                <!-- File attributes -->
+		<?php echo $form->hiddenField($model,'file_type'); ?>
+                <?php echo $form->error($model,'file_type'); ?>
+		<?php echo $form->hiddenField($model,'file_size'); ?>
+		<?php echo $form->hiddenField($model,'file_path'); ?>
+		<?php echo $form->hiddenField($model,'upddate'); ?>
 	</div>
 
 	<div class="row">
@@ -32,21 +39,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'upddate'); ?>
-		<?php echo $form->textField($model,'upddate'); ?>
-		<?php echo $form->error($model,'upddate'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'requires'); ?>
 		<?php echo $form->textField($model,'requires',array('size'=>20,'maxlength'=>20)); ?>
 		<?php echo $form->error($model,'requires'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'CustomerId'); ?>
-		<?php echo $form->textField($model,'CustomerId'); ?>
-		<?php echo $form->error($model,'CustomerId'); ?>
 	</div>
 
 	<div class="row buttons">

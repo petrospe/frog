@@ -28,6 +28,8 @@ $this->menu=array(
 		'file_size',
 		'file_path',
 		'file_category_id',
+		'file_support_id',
+		'file_customer_id',
 		'create_date',
 		'modification_date',
 	),

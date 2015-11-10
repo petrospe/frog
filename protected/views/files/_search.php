@@ -47,6 +47,16 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'file_support_id'); ?>
+		<?php echo $form->textField($model,'file_support_id'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'file_customer_id'); ?>
+		<?php echo $form->textField($model,'file_customer_id'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'create_date'); ?>
 		<?php echo $form->textField($model,'create_date'); ?>
 	</div>

@@ -56,6 +56,18 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'file_support_id'); ?>
+		<?php echo $form->textField($model,'file_support_id'); ?>
+		<?php echo $form->error($model,'file_support_id'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'file_customer_id'); ?>
+		<?php echo $form->textField($model,'file_customer_id'); ?>
+		<?php echo $form->error($model,'file_customer_id'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'create_date'); ?>
 		<?php echo $form->textField($model,'create_date'); ?>
 		<?php echo $form->error($model,'create_date'); ?>

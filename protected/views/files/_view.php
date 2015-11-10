@@ -34,6 +34,14 @@
 	<br />
 
 	<?php /*
+	<b><?php echo CHtml::encode($data->getAttributeLabel('file_support_id')); ?>:</b>
+	<?php echo CHtml::encode($data->file_support_id); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('file_customer_id')); ?>:</b>
+	<?php echo CHtml::encode($data->file_customer_id); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('create_date')); ?>:</b>
 	<?php echo CHtml::encode($data->create_date); ?>
 	<br />

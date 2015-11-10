@@ -26,6 +26,7 @@ $this->menu=array(
 		'version',
 		'upddate',
 		'requires',
-		'CustomerId',
+//		'CustomerId',
+                'file_path',
 	),
 )); ?>

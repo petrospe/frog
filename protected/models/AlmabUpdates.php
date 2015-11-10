@@ -29,14 +29,18 @@ class AlmabUpdates extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-                        array('file, version, upddate, requires','required'),
+                        array('file, file_type, version, upddate, requires','required'),
+                        array('file_type', 'length', 'max'=>30),
+			array('file_size', 'length', 'max'=>11),
+			array('file_path', 'length', 'max'=>250),
+                        array('file', 'length', 'max'=>255),
+                        array('file', 'file', 'types'=>'msi, exe', 'safe' => false),
 			array('CustomerId', 'numerical', 'integerOnly'=>true),
-			array('file', 'length', 'max'=>255),
 			array('version, requires', 'length', 'max'=>20),
 			array('upddate', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, file, version, upddate, requires, CustomerId', 'safe', 'on'=>'search'),
+			array('id, file, version, upddate, requires, CustomerId, file_type, file_size, file_path', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,6 +69,9 @@ class AlmabUpdates extends CActiveRecord
 			'upddate' => 'Upddate',
 			'requires' => 'Requires',
 			'CustomerId' => 'Customer',
+                        'file_type' => 'Type',
+                        'file_size' => 'Size',
+                        'file_path' => 'Path',
 		);
 	}
 
@@ -92,6 +99,9 @@ class AlmabUpdates extends CActiveRecord
 		$criteria->compare('upddate',$this->upddate,true);
 		$criteria->compare('requires',$this->requires,true);
 		$criteria->compare('CustomerId',$this->CustomerId);
+                $criteria->compare('file_type',$this->file_type);
+                $criteria->compare('file_size',$this->file_size);
+                $criteria->compare('file_path',$this->file_path);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -107,5 +117,13 @@ class AlmabUpdates extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+        
+        /* Update Modified, Created dates */
+	public function beforeSave() 
+        {
+	        $this->upddate = new CDbExpression('NOW()');
+	 
+	    return parent::beforeSave();
 	}
 }

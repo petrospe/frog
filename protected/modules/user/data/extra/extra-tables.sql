@@ -15,6 +15,8 @@ CREATE TABLE IF NOT EXISTS `files` (
   `file_size` int(11) unsigned DEFAULT NULL,
   `file_path` varchar(250) DEFAULT NULL,
   `file_category_id` int(11) NOT NULL,
+  `file_support_id` int(11) DEFAULT NULL,
+  `file_customer_id` int(11) DEFAULT NULL,
   `create_date` datetime DEFAULT NULL,
   `modification_date` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -26,18 +28,10 @@ CREATE TABLE IF NOT EXISTS `files_categories` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
 
-CREATE TABLE IF NOT EXISTS `files_customers` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `file_id` int(11) NOT NULL,
-  `customer_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
-
-CREATE TABLE IF NOT EXISTS `files_support` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `file_id` int(11) NOT NULL,
-  `support_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
-
 alter table almab_customerrequest convert to character set greek collate greek_general_ci;
+
+ALTER TABLE `almab_updates` ADD `file_type` VARCHAR(30) NOT NULL AFTER `CustomerId`, ADD `file_size` INT NULL DEFAULT NULL AFTER `file_type`, ADD `file_path` VARCHAR(250) NULL DEFAULT NULL AFTER `file_size`;
+
+UPDATE almab_updates set file_type = 'msi' WHERE id < 39;
+UPDATE almab_updates SET file_type = 'exe' WHERE id > 38;
+ALTER TABLE `almab_updates` CHANGE `file` `file_name` VARCHAR(255) CHARACTER SET greek COLLATE greek_general_ci NULL DEFAULT NULL;
