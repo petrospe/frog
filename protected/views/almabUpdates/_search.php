@@ -17,8 +17,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'file'); ?>
-		<?php echo $form->textField($model,'file',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->label($model,'file_name'); ?>
+		<?php echo $form->textField($model,'file_name',array('size'=>60,'maxlength'=>255)); ?>
 	</div>
 
 	<div class="row">

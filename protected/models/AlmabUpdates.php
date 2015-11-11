@@ -29,18 +29,18 @@ class AlmabUpdates extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-                        array('file, file_type, version, upddate, requires','required'),
+                        array('file_name, file_type, version, upddate, requires','required'),
                         array('file_type', 'length', 'max'=>30),
 			array('file_size', 'length', 'max'=>11),
 			array('file_path', 'length', 'max'=>250),
-                        array('file', 'length', 'max'=>255),
-                        array('file', 'file', 'types'=>'msi, exe', 'safe' => false),
+                        array('file_name', 'length', 'max'=>255),
+                        array('upddate', 'safe'),
+                        array('file_name', 'file', 'types'=>'msi, exe, zip', 'safe' => false),
 			array('CustomerId', 'numerical', 'integerOnly'=>true),
 			array('version, requires', 'length', 'max'=>20),
-			array('upddate', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, file, version, upddate, requires, CustomerId, file_type, file_size, file_path', 'safe', 'on'=>'search'),
+			array('id, file_name, version, upddate, requires, CustomerId, file_type, file_size, file_path', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,7 +64,7 @@ class AlmabUpdates extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'file' => 'File',
+			'file_name' => 'File',
 			'version' => 'Version',
 			'upddate' => 'Upddate',
 			'requires' => 'Requires',
@@ -94,14 +94,14 @@ class AlmabUpdates extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('file',$this->file,true);
+		$criteria->compare('file_name',$this->file_name,true);
 		$criteria->compare('version',$this->version,true);
 		$criteria->compare('upddate',$this->upddate,true);
 		$criteria->compare('requires',$this->requires,true);
 		$criteria->compare('CustomerId',$this->CustomerId);
-                $criteria->compare('file_type',$this->file_type);
-                $criteria->compare('file_size',$this->file_size);
-                $criteria->compare('file_path',$this->file_path);
+                $criteria->compare('file_type',$this->file_type,true);
+                $criteria->compare('file_size',$this->file_size,true);
+                $criteria->compare('file_path',$this->file_path,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

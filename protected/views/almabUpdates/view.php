@@ -22,7 +22,7 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'file',
+		'file_name',
 		'version',
 		'upddate',
 		'requires',
