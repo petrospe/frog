@@ -91,4 +91,9 @@ class FilesCategories extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public function getTypeOptions()
+        {
+            return CHtml::listData(FilesCategories::model() ->findAll(), 'id', 'description');
+        }
 }

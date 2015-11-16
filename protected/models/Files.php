@@ -35,11 +35,12 @@ class Files extends CActiveRecord
 			array('filename_sys, file_type, file_category_id', 'required'),
 			array('file_category_id', 'numerical', 'integerOnly'=>true),
 			array('filename', 'length', 'max'=>80),
-			array('filename_sys', 'length', 'max'=>255),
-			array('file_type', 'length', 'max'=>30),
-			array('file_size', 'length', 'max'=>11),
-			array('file_path', 'length', 'max'=>250),
-			array('create_date, modification_date', 'safe'),
+			array('filename_sys', 'length', 'max'=>255, 'on'=>'insert,update'),
+			array('file_type', 'length', 'max'=>30, 'on'=>'insert,update'),
+			array('file_size', 'length', 'max'=>11, 'on'=>'insert,update'),
+			array('file_path', 'length', 'max'=>250, 'on'=>'insert,update'),
+			array('create_date', 'default', 'value'=>new CDbExpression('NOW()'), 'setOnEmpty'=>false,'on'=>'insert'),
+                        array('modification_date', 'default', 'value'=>new CDbExpression('NOW()'), 'setOnEmpty'=>false,'on'=>'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, filename, filename_sys, file_type, file_size, file_path, file_category_id, file_support_id, file_customer_id,create_date, modification_date', 'safe', 'on'=>'search'),
@@ -121,5 +122,25 @@ class Files extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+        
+        /* Update Modified, Created dates */
+	public function beforeSave() 
+        {
+	    if ($this->isNewRecord)
+	        $this->create_date = new CDbExpression('NOW()');
+	    else
+	        $this->modification_date = new CDbExpression('NOW()');
+	 
+	    return parent::beforeSave();
+	}
+        
+        public function getFilenameFull() 
+        {
+		if ($this->filename==""):
+			return $this->file_path.$this->filename_sys.".".$this->file_type;
+		else:
+			return $this->filename;
+		endif;
 	}
 }

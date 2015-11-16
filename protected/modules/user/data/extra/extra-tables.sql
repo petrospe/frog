@@ -35,3 +35,17 @@ ALTER TABLE `almab_updates` ADD `file_type` VARCHAR(30) NOT NULL AFTER `Customer
 UPDATE almab_updates set file_type = 'msi' WHERE id < 39;
 UPDATE almab_updates SET file_type = 'exe' WHERE id > 38;
 ALTER TABLE `almab_updates` CHANGE `file` `file_name` VARCHAR(255) CHARACTER SET greek COLLATE greek_general_ci NULL DEFAULT NULL;
+
+INSERT INTO `files_categories` (`id`, `description`) VALUES
+(1, 'Version'),
+(2, 'Template'),
+(3, 'SQL Script'),
+(4, 'Text'),
+(5, 'Word document'),
+(6, 'Excel workbook'),
+(7, 'Pdf file'),
+(8, 'Batch file'),
+(9, 'Compressed file'),
+(10, 'Executable file'),
+(11, 'DLL file'),
+(12, 'Image file');

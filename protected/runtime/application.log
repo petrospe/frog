@@ -978,3 +978,34 @@ Stack trace:
 #20 {main}
 REQUEST_URI=/frog/index.php?r=almabUpdates/view&id=63
 ---
+2015/11/16 23:13:02 [error] [exception.CException] exception 'CException' with message 'FilesCategories and its behaviors do not have a method or closure named "getTypeOptions".' in /Library/WebServer/Documents/frog/framework/base/CComponent.php:266
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(227): CComponent->__call('getTypeOptions', Array)
+#1 /Library/WebServer/Documents/frog/protected/views/files/_form.php(43): CActiveRecord->__call('getTypeOptions', Array)
+#2 /Library/WebServer/Documents/frog/protected/views/files/_form.php(43): FilesCategories->getTypeOptions()
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#4 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#6 /Library/WebServer/Documents/frog/protected/views/files/create.php(18): CController->renderPartial('_form', Array)
+#7 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#8 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#11 /Library/WebServer/Documents/frog/protected/controllers/FilesController.php(79): CController->render('create', Array)
+#12 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): FilesController->actionCreate()
+#13 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#20 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#22 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('files/create')
+#23 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#24 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/frog/index.php?r=files/create
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---

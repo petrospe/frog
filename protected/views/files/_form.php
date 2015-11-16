@@ -2,7 +2,11 @@
 /* @var $this FilesController */
 /* @var $model Files */
 /* @var $form CActiveForm */
+$_SESSION['CKFINDER']['disabled'] = false; // enables the file browser in the admin
+$_SESSION['CKFINDER']['uploadURL'] = Yii::app()->baseUrl."/uploads/"; // URL for the uploads folder
+$_SESSION['CKFINDER']['uploadDir'] = Yii::app()->basePath."/../../uploads/"; // path to the uploads folder
 ?>
+<script src="<?php echo Yii::app()->baseUrl.'/ckeditor/ckfinder.js'; ?>"></script>
 
 <div class="form">
 
@@ -27,31 +31,20 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'filename_sys'); ?>
-		<?php echo $form->textField($model,'filename_sys',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'filename_sys',array('size'=>60,'maxlength'=>255, 'id'=>'filefinder')); ?>
 		<?php echo $form->error($model,'filename_sys'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'file_type'); ?>
-		<?php echo $form->textField($model,'file_type',array('size'=>30,'maxlength'=>30)); ?>
+                <!-- File attributes -->
+                <?php echo $form->hiddenField($model,'file_type'); ?>
 		<?php echo $form->error($model,'file_type'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'file_size'); ?>
-		<?php echo $form->textField($model,'file_size',array('size'=>11,'maxlength'=>11)); ?>
-		<?php echo $form->error($model,'file_size'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'file_path'); ?>
-		<?php echo $form->textField($model,'file_path',array('size'=>60,'maxlength'=>250)); ?>
-		<?php echo $form->error($model,'file_path'); ?>
+                <?php echo $form->hiddenField($model,'file_size'); ?>
+                <?php echo $form->hiddenField($model,'file_path'); ?>
+                <?php echo $form->hiddenField($model,'create_date'); ?>
+		<?php echo $form->hiddenField($model,'modification_date'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'file_category_id'); ?>
-		<?php echo $form->textField($model,'file_category_id'); ?>
+		<?php echo $form->dropDownList($model,'file_category_id', FilesCategories::model() ->getTypeOptions()); ?>
 		<?php echo $form->error($model,'file_category_id'); ?>
 	</div>
 
@@ -67,22 +60,14 @@
 		<?php echo $form->error($model,'file_customer_id'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'create_date'); ?>
-		<?php echo $form->textField($model,'create_date'); ?>
-		<?php echo $form->error($model,'create_date'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'modification_date'); ?>
-		<?php echo $form->textField($model,'modification_date'); ?>
-		<?php echo $form->error($model,'modification_date'); ?>
-	</div>
-
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
+
+<script type="text/javascript">
+    CKFinder.widget( 'filefinder' );
+</script>
 
 </div><!-- form -->
