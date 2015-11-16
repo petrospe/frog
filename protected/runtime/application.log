@@ -923,3 +923,58 @@ in /Library/WebServer/Documents/frog/index.php (13)
 in /Library/WebServer/Documents/frog/protected/controllers/AlmabUpdatesController.php (73)
 in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
 in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/16 09:50:34 [warning] [application] Failed to set unsafe attribute "file_name" of "AlmabUpdates".
+in /var/www/frog/protected/controllers/AlmabUpdatesController.php (73)
+in /var/www/frog/protected/modules/rights/components/RController.php (36)
+in /var/www/frog/index.php (13)
+2015/11/16 10:15:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /var/www/frog/protected/controllers/AlmabUpdatesController.php:170
+Stack trace:
+#0 /var/www/frog/protected/controllers/AlmabUpdatesController.php(56): AlmabUpdatesController->loadModel('')
+#1 [internal function]: AlmabUpdatesController->actionView('')
+#2 /var/www/frog/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(AlmabUpdatesController), Array)
+#3 /var/www/frog/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(AlmabUpdatesController), Object(ReflectionMethod), Array)
+#4 /var/www/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /var/www/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /var/www/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/frog/framework/web/CWebApplication.php(282): CController->run('view')
+#17 /var/www/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabUpdates/vi...')
+#18 /var/www/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /var/www/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabUpdates/view&id=
+HTTP_REFERER=http://localhost/frog/index.php?r=almabUpdates/create
+---
+2015/11/16 10:18:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /var/www/frog/protected/controllers/AlmabUpdatesController.php:170
+Stack trace:
+#0 /var/www/frog/protected/controllers/AlmabUpdatesController.php(56): AlmabUpdatesController->loadModel('63')
+#1 [internal function]: AlmabUpdatesController->actionView('63')
+#2 /var/www/frog/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(AlmabUpdatesController), Array)
+#3 /var/www/frog/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(AlmabUpdatesController), Object(ReflectionMethod), Array)
+#4 /var/www/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /var/www/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /var/www/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/frog/framework/web/CWebApplication.php(282): CController->run('view')
+#17 /var/www/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabUpdates/vi...')
+#18 /var/www/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /var/www/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabUpdates/view&id=63
+---

@@ -30,12 +30,12 @@ class AlmabUpdates extends CActiveRecord
 		// will receive user inputs.
 		return array(
                         array('file_name, file_type, version, upddate, requires','required'),
-                        array('file_type', 'length', 'max'=>30),
-			array('file_size', 'length', 'max'=>11),
-			array('file_path', 'length', 'max'=>250),
-                        array('file_name', 'length', 'max'=>255),
-                        array('upddate', 'safe'),
-                        array('file_name', 'file', 'types'=>'msi, exe, zip', 'safe' => false),
+                        array('file_type', 'length', 'max'=>30, 'on'=>'insert,update'),
+			array('file_size', 'length', 'max'=>11, 'on'=>'insert,update'),
+			array('file_path', 'length', 'max'=>250, 'on'=>'insert,update'),
+                        array('file_name', 'length', 'max'=>255, 'on'=>'insert,update'),
+                        array('upddate','default', 'value'=>new CDbExpression('NOW()'), 'setOnEmpty'=>false,'on'=>'insert,update'),
+                        array('file_name', 'file', 'types'=>'msi, exe, zip', 'allowEmpty'=>true, 'on'=>'update'),
 			array('CustomerId', 'numerical', 'integerOnly'=>true),
 			array('version, requires', 'length', 'max'=>20),
 			// The following rule is used by search().
@@ -105,6 +105,9 @@ class AlmabUpdates extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'sort'=>array(
+                        'defaultOrder'=>'id DESC',
+                         ),
 		));
 	}
 

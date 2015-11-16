@@ -76,10 +76,11 @@ class AlmabUpdatesController extends RController
                         {
                         $fileName = "{$uploadFile}";
                         $uploadFile->saveAs(Yii::app()->basePath.'../../../clientupd/msi/'.$fileName);
-                        $model->file_path=('http://www.nbalma.gr/clientupd/msi/');
+                        $model->file_path=('http://www.nbalma.gr/clientupd/msi/'.$fileName);
                         $model->file_name=$fileName;
                         $model->file_type=$uploadFile->getExtensionName();
                         $model->file_size=$uploadFile->getSize();
+                        $model->upddate='NOW()';
                         }
         
 			if($model->save())

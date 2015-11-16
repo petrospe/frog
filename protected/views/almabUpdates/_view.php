@@ -26,7 +26,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('file_path')); ?>:</b>
-	<?php echo CHtml::encode($data->file_path); ?>
+	<?php echo ($data->file_path); ?>
 	<br />
 
 

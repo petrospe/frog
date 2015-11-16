@@ -28,5 +28,7 @@ $this->menu=array(
 		'requires',
 //		'CustomerId',
                 'file_path',
+                'file_type',
+                'file_size',
 	),
 )); ?>
