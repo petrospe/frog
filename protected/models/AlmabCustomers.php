@@ -114,4 +114,9 @@ class AlmabCustomers extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public function getTypeOptions()
+        {
+            return CHtml::listData(AlmabCustomers::model() ->findAll(), 'id', 'descr');
+        }
 }

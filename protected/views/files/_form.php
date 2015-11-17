@@ -50,13 +50,13 @@ $_SESSION['CKFINDER']['uploadDir'] = Yii::app()->basePath."/../../uploads/"; // 
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'file_support_id'); ?>
-		<?php echo $form->textField($model,'file_support_id'); ?>
+		<?php echo $form->dropDownList($model,'file_support_id', Support::model() ->getTypeOptions(), array('prompt' => '-- None--')); ?>
 		<?php echo $form->error($model,'file_support_id'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'file_customer_id'); ?>
-		<?php echo $form->textField($model,'file_customer_id'); ?>
+		<?php echo $form->dropDownList($model,'file_customer_id', AlmabCustomers::model() ->getTypeOptions(), array('prompt' => '-- None--')); ?>
 		<?php echo $form->error($model,'file_customer_id'); ?>
 	</div>
 
@@ -66,8 +66,10 @@ $_SESSION['CKFINDER']['uploadDir'] = Yii::app()->basePath."/../../uploads/"; // 
 
 <?php $this->endWidget(); ?>
 
-<script type="text/javascript">
-    CKFinder.widget( 'filefinder' );
-</script>
+<script>
+     CKFinder.popup('filefinder',{
+         height: 600
+     });
+ </script>
 
 </div><!-- form -->

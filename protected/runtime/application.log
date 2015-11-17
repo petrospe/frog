@@ -1009,3 +1009,39 @@ Stack trace:
 REQUEST_URI=/frog/index.php?r=files/create
 HTTP_REFERER=http://localhost/frog/index.php?r=user/login
 ---
+2015/11/17 23:08:24 [warning] [application] Failed to set unsafe attribute "modification_date" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/17 23:08:24 [warning] [application] Failed to set unsafe attribute "file_support_id" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/17 23:08:24 [warning] [application] Failed to set unsafe attribute "file_customer_id" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/17 23:08:36 [warning] [application] Failed to set unsafe attribute "modification_date" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/17 23:08:36 [warning] [application] Failed to set unsafe attribute "file_support_id" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/17 23:08:36 [warning] [application] Failed to set unsafe attribute "file_customer_id" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/17 23:09:29 [warning] [application] Failed to set unsafe attribute "modification_date" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/17 23:09:29 [warning] [application] Failed to set unsafe attribute "file_support_id" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/17 23:09:29 [warning] [application] Failed to set unsafe attribute "file_customer_id" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/17 23:09:32 [warning] [application] Failed to set unsafe attribute "modification_date" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/17 23:09:32 [warning] [application] Failed to set unsafe attribute "file_support_id" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)
+2015/11/17 23:09:32 [warning] [application] Failed to set unsafe attribute "file_customer_id" of "Files".
+in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (72)
+in /Library/WebServer/Documents/frog/index.php (13)

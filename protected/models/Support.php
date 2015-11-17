@@ -93,4 +93,9 @@ class Support extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public function getTypeOptions()
+        {
+            return CHtml::listData(Support::model() ->findAll(), 'id', 'description');
+        }
 }
