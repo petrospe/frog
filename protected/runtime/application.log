@@ -1900,3 +1900,24 @@ Stack trace:
 REQUEST_URI=/frog/index.php?r=support
 HTTP_REFERER=http://localhost/frog/index.php?r=site/contact
 ---
+2016/01/24 17:38:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php:62
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/components/RightsFilter.php(57): RController->accessDenied()
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): RightsFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('support')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=support
+HTTP_REFERER=http://localhost/frog/index.php
+---
