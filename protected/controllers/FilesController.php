@@ -70,6 +70,18 @@ class FilesController extends Controller
 		if(isset($_POST['Files']))
 		{
 			$model->attributes=$_POST['Files'];
+                        $uploadFile = CUploadedFile::getInstance($model, 'filename_sys');
+                        if(!empty($uploadFile))
+                        {
+                        $fileName = "{$uploadFile}";
+                        $uploadFile->saveAs(Yii::app()->basePath.'/../../uploads/'.$fileName);
+                        $model->file_path=('http://www.nbalma.gr/uploads/'.$fileName);
+                        $model->filename_sys=$fileName;
+                        if(empty($model->filename))
+                            {$model->filename=$fileName;}
+                        $model->file_type=$uploadFile->getExtensionName();
+                        $model->file_size=$uploadFile->getSize();
+                        }
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -94,6 +106,18 @@ class FilesController extends Controller
 		if(isset($_POST['Files']))
 		{
 			$model->attributes=$_POST['Files'];
+                        $uploadFile = CUploadedFile::getInstance($model, 'filename_sys');
+                        if(!empty($uploadFile))
+                        {
+                        $fileName = "{$uploadFile}";
+                        $uploadFile->saveAs(Yii::app()->basePath.'/../../uploads/'.$fileName);
+                        $model->file_path=('http://www.nbalma.gr/uploads/'.$fileName);
+                        $model->filename_sys=$fileName;
+                        if(empty($model->filename))
+                            {$model->filename=$fileName;}
+                        $model->file_type=$uploadFile->getExtensionName();
+                        $model->file_size=$uploadFile->getSize();
+                        }
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}

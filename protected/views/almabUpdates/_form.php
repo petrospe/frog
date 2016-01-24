@@ -23,10 +23,8 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'file_name'); ?>
 		<?php echo CHtml::activeFileField($model,'file_name'); ?>
-		<?php echo $form->error($model,'file_name'); ?>
                 <!-- File attributes -->
 		<?php echo $form->hiddenField($model,'file_type'); ?>
-                <?php echo $form->error($model,'file_type'); ?>
 		<?php echo $form->hiddenField($model,'file_size'); ?>
 		<?php echo $form->hiddenField($model,'file_path'); ?>
 		<?php echo $form->hiddenField($model,'upddate'); ?>

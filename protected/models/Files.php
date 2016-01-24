@@ -33,7 +33,7 @@ class Files extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('filename_sys, file_type, file_category_id', 'required'),
-			array('file_category_id', 'numerical', 'integerOnly'=>true),
+			array('file_category_id, file_support_id, file_customer_id', 'numerical', 'integerOnly'=>true),
 			array('filename', 'length', 'max'=>80),
 			array('filename_sys', 'length', 'max'=>255, 'on'=>'insert,update'),
 			array('file_type', 'length', 'max'=>30, 'on'=>'insert,update'),

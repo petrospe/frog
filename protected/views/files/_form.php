@@ -2,11 +2,11 @@
 /* @var $this FilesController */
 /* @var $model Files */
 /* @var $form CActiveForm */
-$_SESSION['CKFINDER']['disabled'] = false; // enables the file browser in the admin
-$_SESSION['CKFINDER']['uploadURL'] = Yii::app()->baseUrl."/uploads/"; // URL for the uploads folder
-$_SESSION['CKFINDER']['uploadDir'] = Yii::app()->basePath."/../../uploads/"; // path to the uploads folder
+//$_SESSION['CKFINDER']['disabled'] = false; // enables the file browser in the admin
+//$_SESSION['CKFINDER']['uploadURL'] = Yii::app()->baseUrl."/uploads/"; // URL for the uploads folder
+//$_SESSION['CKFINDER']['uploadDir'] = Yii::app()->basePath."/../../uploads/"; // path to the uploads folder
 ?>
-<script src="<?php echo Yii::app()->baseUrl.'/ckeditor/ckfinder.js'; ?>"></script>
+<!--<script src="<?php //echo Yii::app()->baseUrl.'/ckfinder/ckfinder.js'; ?>"></script>-->
 
 <div class="form">
 
@@ -16,6 +16,7 @@ $_SESSION['CKFINDER']['uploadDir'] = Yii::app()->basePath."/../../uploads/"; // 
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
+    'htmlOptions' => array('enctype' => 'multipart/form-data'),
 	'enableAjaxValidation'=>false,
 )); ?>
 
@@ -31,11 +32,10 @@ $_SESSION['CKFINDER']['uploadDir'] = Yii::app()->basePath."/../../uploads/"; // 
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'filename_sys'); ?>
-		<?php echo $form->textField($model,'filename_sys',array('size'=>60,'maxlength'=>255, 'id'=>'filefinder')); ?>
-		<?php echo $form->error($model,'filename_sys'); ?>
+		<?php echo CHtml::activeFileField($model,'filename_sys',array('size'=>60,'maxlength'=>255, 'multiple' => true, 'id'=>'filefinder')); ?>
+                    <button onclick="$('#filefinder').val('');return false;">Clear file input</button>
                 <!-- File attributes -->
                 <?php echo $form->hiddenField($model,'file_type'); ?>
-		<?php echo $form->error($model,'file_type'); ?>
                 <?php echo $form->hiddenField($model,'file_size'); ?>
                 <?php echo $form->hiddenField($model,'file_path'); ?>
                 <?php echo $form->hiddenField($model,'create_date'); ?>
@@ -66,10 +66,10 @@ $_SESSION['CKFINDER']['uploadDir'] = Yii::app()->basePath."/../../uploads/"; // 
 
 <?php $this->endWidget(); ?>
 
-<script>
+<!--<script>
      CKFinder.popup('filefinder',{
          height: 600
      });
- </script>
+ </script>-->
 
 </div><!-- form -->
