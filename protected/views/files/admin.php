@@ -42,22 +42,30 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'files-grid',
+        'itemsCssClass'=>'table table-striped table-bordered table-hover',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
 		'filename',
+                /*
 		'filename_sys',
 		'file_type',
+                 */
 		'file_size',
 		'file_path',
 		/*
 		'file_category_id',
 		'file_support_id',
 		'file_customer_id',
+                 */
+                array(
+                    'name'=>'almabcustomers.descr',
+                    'filter'=>CHtml::activeTextField($model,'almabcustomers_search'),
+                    ),
 		'create_date',
 		'modification_date',
-		*/
+		
 		array(
 			'class'=>'CButtonColumn',
 		),

@@ -16,6 +16,7 @@
  */
 class Files extends CActiveRecord
 {
+        public $almabcustomers_search;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -43,7 +44,7 @@ class Files extends CActiveRecord
                         array('modification_date', 'default', 'value'=>new CDbExpression('NOW()'), 'setOnEmpty'=>false,'on'=>'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, filename, filename_sys, file_type, file_size, file_path, file_category_id, file_support_id, file_customer_id,create_date, modification_date', 'safe', 'on'=>'search'),
+			array('id, filename, filename_sys, file_type, file_size, file_path, file_category_id, file_support_id, file_customer_id, almabcustomers_search, create_date, modification_date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,6 +56,7 @@ class Files extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'almabcustomers' => array(self::BELONGS_TO, 'AlmabCustomers', 'file_customer_id'),
 		);
 	}
 
@@ -93,23 +95,37 @@ class Files extends CActiveRecord
 	public function search()
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
+                $this->tableAlias = 't';
 
 		$criteria=new CDbCriteria;
+                $criteria->with = array('almabcustomers'); // eager load related records
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('filename',$this->filename,true);
-		$criteria->compare('filename_sys',$this->filename_sys,true);
-		$criteria->compare('file_type',$this->file_type,true);
-		$criteria->compare('file_size',$this->file_size,true);
-		$criteria->compare('file_path',$this->file_path,true);
-		$criteria->compare('file_category_id',$this->file_category_id,true);
-                $criteria->compare('file_category_id',$this->file_support_id,true);
-                $criteria->compare('file_category_id',$this->file_customer_id,true);
-		$criteria->compare('create_date',$this->create_date,true);
-		$criteria->compare('modification_date',$this->modification_date,true);
+		$criteria->compare('t.id',$this->id);
+		$criteria->compare('t.filename',$this->filename,true);
+		$criteria->compare('t.filename_sys',$this->filename_sys,true);
+		$criteria->compare('t.file_type',$this->file_type,true);
+		$criteria->compare('t.file_size',$this->file_size,true);
+		$criteria->compare('t.file_path',$this->file_path,true);
+		$criteria->compare('t.file_category_id',$this->file_category_id,true);
+                $criteria->compare('t.file_category_id',$this->file_support_id,true);
+                $criteria->compare('t.file_category_id',$this->file_customer_id,true);
+		$criteria->compare('t.create_date',$this->create_date,true);
+		$criteria->compare('t.modification_date',$this->modification_date,true);
+                $criteria->compare('almabcustomers.descr', $this->almabcustomers_search, true ); // related field
+                
+                $sort = new CSort();
+		$sort->attributes = array(			
+				'almabcustomers.descr' => // sort rules for almabcustomers.descr
+					array(
+						'asc'  => 'almabcustomers.descr',
+						'desc' => 'almabcustomers.descr DESC',
+					),
+                                '*', // add other columns
+			);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'sort' => $sort,
 		));
 	}
 

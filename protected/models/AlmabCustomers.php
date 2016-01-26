@@ -52,6 +52,7 @@ class AlmabCustomers extends CActiveRecord
                     'almabcustomerupdate' => array(self::HAS_MANY, 'AlmabCustomerupdate', 'customerid'),
                     'almabupdates' => array(self::HAS_MANY, 'AlmabUpdates', 'CustomerId'),
                     'almabcustomerrequest'=>array(self::HAS_MANY, 'AlmabCustomerrequest', 'SerialNumber'),
+                    'files' => array(self::HAS_MANY, 'Files', 'file_customer_id'),
 		);
 	}
 
