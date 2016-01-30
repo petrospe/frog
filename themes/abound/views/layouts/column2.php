@@ -103,20 +103,56 @@
             </tr>
           </tbody>
         </table>
-		<div class="well">
-        
+        <?php
+        //All Customers
+        function getAllCustomers(){
+           $AllCustomers = Yii::app()->db->createCommand()
+                ->select(array('count(*)'))
+                ->from('almab_customers')
+                ->queryRow();
+        return $AllCustomers;
+        }
+        //Active Customers
+        function getActiveCustomers(){
+           $ActiveCustomers = Yii::app()->db->createCommand()
+                ->select(array('count(*)'))
+                ->from('almab_customers')
+                ->where('updateto > NOW()')
+                ->queryRow();
+        return $ActiveCustomers;
+        }
+        //Inactive Customers
+        function getInactiveCustomers(){
+           $InactiveCustomers = Yii::app()->db->createCommand()
+                ->select(array('count(*)'))
+                ->from('almab_customers')
+                ->where('updateto < NOW()')
+                ->queryRow();
+        return $InactiveCustomers;
+        }
+        //Users
+        function getTotalUsers(){
+           $TotalUsers = Yii::app()->db->createCommand()
+                ->select(array('sum(SUBSTRING_INDEX(SUBSTRING_INDEX(dbserial, "-", 2), "-", -1))'))
+                ->from('almab_customers')
+                ->where('descr IS NOT NULL')
+                ->queryRow();
+        return $TotalUsers;
+        }
+        ?>
+	<div class="well">
             <dl class="dl-horizontal">
-              <dt>Account status</dt>
-              <dd>$1,234,002</dd>
-              <dt>Open Invoices</dt>
-              <dd>$245,000</dd>
-              <dt>Overdue Invoices</dt>
-              <dd>$20,023</dd>
-              <dt>Converted Quotes</dt>
-              <dd>$560,000</dd>
+              <dt>Total Customers</dt>
+              <dd><?php echo implode("",getAllCustomers()); ?></dd>
+              <dt>Ongoing Services</dt>
+              <dd><?php echo implode("",getActiveCustomers()); ?></dd>
+              <dt>Overdue Services</dt>
+              <dd><?php echo implode("",getInactiveCustomers()); ?></dd>
+              <dt>Total Users</dt>
+              <dd><?php echo implode("",getTotalUsers()); ?></dd>
               
             </dl>
-      </div>
+        </div>
 		
     </div><!--/span-->
     <div class="span9">
