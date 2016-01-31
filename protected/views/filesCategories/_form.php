@@ -3,7 +3,12 @@
 /* @var $model FilesCategories */
 /* @var $form CActiveForm */
 ?>
-
+<?php
+	$this->beginWidget('zii.widgets.CPortlet', array(
+		'title'=>"Files Category form",
+	));
+	
+?>
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -26,9 +31,11 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-success btn-large')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<?php $this->endWidget(); ?> <!-- portlet -->

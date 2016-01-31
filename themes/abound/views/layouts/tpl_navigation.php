@@ -56,6 +56,7 @@
                         'items'=>array(
                             array('label'=>'Support', 'url'=>array('/support')),
                             array('label'=>'Files', 'url'=>array('/files')),
+                            array('label'=>'File Category', 'url'=>array('/filesCategories')),
                         )),
                         array('label'=>'Manage <span class="caret"></span>', 'url'=>'#','itemOptions'=>array('class'=>'dropdown','tabindex'=>"-1"),'linkOptions'=>array('class'=>'dropdown-toggle','data-toggle'=>"dropdown"), 
                         'items'=>array(

@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List AlmabCustomers', 'url'=>array('index')),
-	array('label'=>'Manage AlmabCustomers', 'url'=>array('admin')),
+	array('label'=>'<i class="icon-th-list"></i> List AlmabCustomers', 'url'=>array('index')),
+	array('label'=>'<i class="icon-edit"></i> ManageAlmabCustomers', 'url'=>array('admin')),
 );
 ?>
 

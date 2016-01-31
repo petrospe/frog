@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List AlmabCustomerrequest', 'url'=>array('index')),
-	array('label'=>'Create AlmabCustomerrequest', 'url'=>array('create')),
+	array('label'=>'<i class="icon-th-list"></i> List AlmabCustomerrequest', 'url'=>array('index')),
+//	array('label'=>'<i class="icon-plus-sign"></i> Create AlmabCustomerrequest', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

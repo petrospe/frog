@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Support', 'url'=>array('index')),
-	array('label'=>'Create Support', 'url'=>array('create')),
-	array('label'=>'View Support', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Support', 'url'=>array('admin')),
+	array('label'=>'<i class="icon-th-list"></i> List Support', 'url'=>array('index')),
+	array('label'=>'<i class="icon-plus-sign"></i> Create Support', 'url'=>array('create')),
+	array('label'=>'<i class="icon-user"></i> View Support', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'<i class="icon-edit"></i> ManageSupport', 'url'=>array('admin')),
 );
 ?>
 

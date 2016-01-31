@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Support', 'url'=>array('create')),
-	array('label'=>'Manage Support', 'url'=>array('admin')),
+	array('label'=>'<i class="icon-plus-sign"></i> Create Support', 'url'=>array('create')),
+	array('label'=>'<i class="icon-edit"></i> Manage Support', 'url'=>array('admin')),
 );
 ?>
 

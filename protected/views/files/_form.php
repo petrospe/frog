@@ -2,12 +2,14 @@
 /* @var $this FilesController */
 /* @var $model Files */
 /* @var $form CActiveForm */
-//$_SESSION['CKFINDER']['disabled'] = false; // enables the file browser in the admin
-//$_SESSION['CKFINDER']['uploadURL'] = Yii::app()->baseUrl."/uploads/"; // URL for the uploads folder
-//$_SESSION['CKFINDER']['uploadDir'] = Yii::app()->basePath."/../../uploads/"; // path to the uploads folder
 ?>
-<!--<script src="<?php //echo Yii::app()->baseUrl.'/ckfinder/ckfinder.js'; ?>"></script>-->
 
+<?php
+	$this->beginWidget('zii.widgets.CPortlet', array(
+		'title'=>"Files form",
+	));
+	
+?>
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -16,7 +18,7 @@
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
-    'htmlOptions' => array('enctype' => 'multipart/form-data'),
+        'htmlOptions' => array('enctype' => 'multipart/form-data'),
 	'enableAjaxValidation'=>false,
 )); ?>
 
@@ -32,8 +34,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'filename_sys'); ?>
-		<?php echo CHtml::activeFileField($model,'filename_sys',array('size'=>60,'maxlength'=>255, 'multiple' => true, 'id'=>'filefinder')); ?>
-                    <button onclick="$('#filefinder').val('');return false;">Clear file input</button>
+		<?php echo CHtml::activeFileField($model,'filename_sys',array('size'=>60,'maxlength'=>255, 'multiple' => true, 'id'=>'filefinder', 'class'=>'btn')); ?>
+                    <button class="btn btn-danger btn-large" onclick="$('#filefinder').val('');return false;">Clear file input</button>
                 <!-- File attributes -->
                 <?php echo $form->hiddenField($model,'file_type'); ?>
                 <?php echo $form->hiddenField($model,'file_size'); ?>
@@ -61,15 +63,11 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-success btn-large')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 
-<!--<script>
-     CKFinder.popup('filefinder',{
-         height: 600
-     });
- </script>-->
-
 </div><!-- form -->
+
+<?php $this->endWidget(); ?> <!-- portlet -->

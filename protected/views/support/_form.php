@@ -3,6 +3,12 @@
 /* @var $model Support */
 /* @var $form CActiveForm */
 ?>
+<?php
+	$this->beginWidget('zii.widgets.CPortlet', array(
+		'title'=>"Support form",
+	));
+	
+?>
 <script src="//cdn.ckeditor.com/4.5.4/standard/ckeditor.js"></script>
 <div class="form">
 
@@ -21,7 +27,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'description'); ?>
-		<?php echo $form->textArea($model,'description',array('style'=>'width: 600px;', 'rows'=>3, 'cols'=>150)); ?>
+		<?php echo $form->textArea($model,'description',array('rows'=>3, 'cols'=>150, 'class'=>'span12')); ?>
 		<?php echo $form->error($model,'description'); ?>
 	</div>
 
@@ -32,7 +38,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-success btn-large')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
@@ -42,3 +48,5 @@
 </script>
 
 </div><!-- form -->
+
+<?php $this->endWidget(); ?> <!-- portlet -->

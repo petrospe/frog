@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List AlmabCustomers', 'url'=>array('index')),
-	array('label'=>'Create AlmabCustomers', 'url'=>array('create')),
-	array('label'=>'Update AlmabCustomers', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete AlmabCustomers', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage AlmabCustomers', 'url'=>array('admin')),
+	array('label'=>'<i class="icon-th-list"></i> List AlmabCustomers', 'url'=>array('index')),
+	array('label'=>'<i class="icon-plus-sign"></i> Create AlmabCustomers', 'url'=>array('create')),
+	array('label'=>'<i class="icon-pencil"></i> Update AlmabCustomers', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'<i class="icon-trash"></i> Delete AlmabCustomers', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'<i class="icon-edit"></i> ManageAlmabCustomers', 'url'=>array('admin')),
 );
 ?>
 
@@ -20,6 +20,7 @@ $this->menu=array(
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
+        'htmlOptions'=>array('class'=>'table table-striped table-bordered table-hover'),
 	'attributes'=>array(
 		'id',
 		'descr',

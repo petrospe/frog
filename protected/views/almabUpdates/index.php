@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create AlmabUpdates', 'url'=>array('create')),
-	array('label'=>'Manage AlmabUpdates', 'url'=>array('admin')),
+	array('label'=>'<i class="icon-plus-sign"></i> Create AlmabUpdates', 'url'=>array('create')),
+	array('label'=>'<i class="icon-edit"></i> Manage AlmabUpdates', 'url'=>array('admin')),
 );
 ?>
 

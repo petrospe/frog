@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List AlmabCustomerupdate', 'url'=>array('index')),
-	array('label'=>'Create AlmabCustomerupdate', 'url'=>array('create')),
-	array('label'=>'View AlmabCustomerupdate', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage AlmabCustomerupdate', 'url'=>array('admin')),
+	array('label'=>'<i class="icon-th-list"></i> List AlmabCustomerupdate', 'url'=>array('index')),
+//	array('label'=>'<i class="icon-plus-sign"></i> Create AlmabCustomerupdate', 'url'=>array('create')),
+	array('label'=>'<i class="icon-user"></i> View AlmabCustomerupdate', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'<i class="icon-edit"></i> ManageAlmabCustomerupdate', 'url'=>array('admin')),
 );
 ?>
 

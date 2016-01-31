@@ -3,7 +3,12 @@
 /* @var $model AlmabUpdates */
 /* @var $form CActiveForm */
 ?>
-
+<?php
+	$this->beginWidget('zii.widgets.CPortlet', array(
+		'title'=>"Updates form",
+	));
+	
+?>
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -22,7 +27,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'file_name'); ?>
-		<?php echo CHtml::activeFileField($model,'file_name'); ?>
+		<?php echo CHtml::activeFileField($model,'file_name',array('id'=>'filefinder','class'=>'btn')); ?>
+                    <button class="btn btn-danger btn-large" onclick="$('#filefinder').val('');return false;">Clear file input</button>
                 <!-- File attributes -->
 		<?php echo $form->hiddenField($model,'file_type'); ?>
 		<?php echo $form->hiddenField($model,'file_size'); ?>
@@ -43,9 +49,11 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-success btn-large')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<?php $this->endWidget(); ?> <!-- portlet -->

@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List AlmabContractslog', 'url'=>array('index')),
-	array('label'=>'Manage AlmabContractslog', 'url'=>array('admin')),
+	array('label'=>'<i class="icon-th-list"></i> List AlmabContractslog', 'url'=>array('index')),
+	array('label'=>'<i class="icon-edit"></i> ManageAlmabContractslog', 'url'=>array('admin')),
 );
 ?>
 

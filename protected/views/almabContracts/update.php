@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List AlmabContracts', 'url'=>array('index')),
-	array('label'=>'Create AlmabContracts', 'url'=>array('create')),
-	array('label'=>'View AlmabContracts', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage AlmabContracts', 'url'=>array('admin')),
+	array('label'=>'<i class="icon-th-list"></i> List AlmabContracts', 'url'=>array('index')),
+	array('label'=>'<i class="icon-plus-sign"></i> Create AlmabContracts', 'url'=>array('create')),
+	array('label'=>'<i class="icon-user"></i> View AlmabContracts', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'<i class="icon-edit"></i> ManageAlmabContracts', 'url'=>array('admin')),
 );
 ?>
 

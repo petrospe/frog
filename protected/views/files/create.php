@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Files', 'url'=>array('index')),
-	array('label'=>'Manage Files', 'url'=>array('admin')),
+	array('label'=>'<i class="icon-th-list"></i> List Files', 'url'=>array('index')),
+	array('label'=>'<i class="icon-edit"></i> ManageFiles', 'url'=>array('admin')),
 );
 ?>
 

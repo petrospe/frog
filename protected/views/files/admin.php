@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Files', 'url'=>array('index')),
-	array('label'=>'Create Files', 'url'=>array('create')),
+	array('label'=>'<i class="icon-th-list"></i> List Files', 'url'=>array('index')),
+	array('label'=>'<i class="icon-plus-sign"></i> Create Files', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
