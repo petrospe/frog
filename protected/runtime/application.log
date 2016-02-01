@@ -3786,3 +3786,9 @@ REQUEST_URI=/frog/index.php?r=files/create
 in /Library/WebServer/Documents/frog/protected/views/files/_form.php (9)
 in /Library/WebServer/Documents/frog/protected/views/files/create.php (18)
 in /Library/WebServer/Documents/frog/protected/controllers/FilesController.php (92)
+2016/02/01 19:57:45 [error] [system.db.CDbCommand] Error in preparing SQL: DELETE FROM 'YiiSession' WHERE expire<:expire
+in /Library/WebServer/Documents/frog/protected/components/RequireLogin.php (23)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/02/01 19:57:45 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: YiiSession. The SQL statement executed was: DELETE FROM 'YiiSession' WHERE expire<:expire.
+in /Library/WebServer/Documents/frog/protected/components/RequireLogin.php (23)
+in /Library/WebServer/Documents/frog/index.php (13)
