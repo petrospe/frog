@@ -35,6 +35,7 @@
 		</div>
         <br>
         <?php
+        if (Yii::app()->user->isSuperuser) {
         /* Bandwith Usage Server speed*/
             $link = 'http://cachefly.cachefly.net/1mb.test';
             $ch = curl_init($link);
@@ -66,44 +67,42 @@
                     $load = sys_getloadavg();
                     return $load[0];
                 }
-        ?>
-        <table class="table table-striped table-bordered">
-          <tbody>
-            <tr>
-              <td width="50%">Bandwith Usage</td>
-              <td>
-              	<div class="progress progress-danger">
-                  <div class="bar" style="width: <?php echo ($speed*100)/4; ?>%"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Disk Space</td>
-              <td>
-             	<div class="progress progress-warning">
-                  <div class="bar" style="width: <?php echo ($df*100)/$ds; ?>%"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Memory Usage</td>
-              <td>
-             	<div class="progress progress-success">
-                  <div class="bar" style="width: <?php echo ($memuse*100)/128; ?>%"></div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>CPU load</td>
-              <td>
-              	<div class="progress progress-info">
-                  <div class="bar" style="width: <?php echo get_server_cpu_usage(); ?>%"></div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <?php
+        echo "<table class='table table-striped table-bordered'>
+                <tbody>
+                  <tr>
+                    <td width='50%'>Bandwith Usage</td>
+                    <td>
+                      <div class='progress progress-danger'>
+                        <div class='bar' style='width: ".($speed*100)/4 ."%'></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Disk Space</td>
+                    <td>
+                      <div class='progress progress-warning'>
+                        <div class='bar' style='width: ".($df*100)/$ds."%'></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Memory Usage</td>
+                    <td>
+                      <div class='progress progress-success'>
+                        <div class='bar' style='width: ".($memuse*100)/128 ."%'></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>CPU load</td>
+                    <td>
+                      <div class='progress progress-info'>
+                        <div class='bar' style='width: ".get_server_cpu_usage() ."%'></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>";
         //All Customers
         function getAllCustomers(){
            $AllCustomers = Yii::app()->db->createCommand()
@@ -139,21 +138,20 @@
                 ->queryRow();
         return $TotalUsers;
         }
-        ?>
-	<div class="well">
-            <dl class="dl-horizontal">
-              <dt>Total Customers</dt>
-              <dd><?php echo implode("",getAllCustomers()); ?></dd>
-              <dt>Ongoing Services</dt>
-              <dd><?php echo implode("",getActiveCustomers()); ?></dd>
-              <dt>Overdue Services</dt>
-              <dd><?php echo implode("",getInactiveCustomers()); ?></dd>
-              <dt>Total Users</dt>
-              <dd><?php echo implode("",getTotalUsers()); ?></dd>
-              
-            </dl>
-        </div>
-		
+	echo "<div class='well'>
+                <dl class='dl-horizontal'>
+                  <dt>Total Customers</dt>
+                  <dd>".implode("",getAllCustomers())."</dd>
+                  <dt>Ongoing Services</dt>
+                  <dd>".implode("",getActiveCustomers())."</dd>
+                  <dt>Overdue Services</dt>
+                  <dd>".implode("",getInactiveCustomers())."</dd>
+                  <dt>Total Users</dt>
+                  <dd>".implode("",getTotalUsers())."</dd>
+                </dl>
+            </div>";
+        }
+		?>
     </div><!--/span-->
     <div class="span9">
     
