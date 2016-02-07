@@ -66,3 +66,12 @@
                 ->queryRow();
         return $TotalUsers;
         }
+        //Contracts
+        function getActiveContracts(){
+           $ActiveContracts = Yii::app()->db->createCommand()
+                ->select(array('count(*)'))
+                ->from('almab_contracts')
+                ->where('ContractEndDate > NOW()')
+                ->queryRow();
+        return $ActiveContracts;
+        }

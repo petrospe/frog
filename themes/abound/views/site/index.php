@@ -6,6 +6,8 @@ $baseUrl = Yii::app()->theme->baseUrl;
 ?>
 <?php
 if (Yii::app()->user->isSuperuser) {
+    require_once Yii::app()->basePath . '/../themes/abound/views/site/customFunctions.php';
+    
         $gridDataProvider = new CArrayDataProvider(array(
         array('id'=>1, 'firstName'=>'Mark', 'lastName'=>'Otto', 'language'=>'CSS','usage'=>'<span class="inlinebar">1,3,4,5,3,5</span>'),
         array('id'=>2, 'firstName'=>'Jacob', 'lastName'=>'Thornton', 'language'=>'JavaScript','usage'=>'<span class="inlinebar">1,3,16,5,12,5</span>'),
@@ -83,29 +85,29 @@ if (Yii::app()->user->isSuperuser) {
                     <span class='summary-icon'>
                             <img src='".$baseUrl ."/img/page_white_edit.png' width='36' height='36' alt='Open Invoices'>
                     </span>
-                    <span class='summary-number'>125</span>
-                    <span class='summary-title'> Open Invoices</span>
+                    <span class='summary-number'>".implode("",getActiveContracts())."</span>
+                    <span class='summary-title'> Open Contracts</span>
                 </li>
                 <li>
                     <span class='summary-icon'>
                             <img src='".$baseUrl ."/img/page_white_excel.png' width='36' height='36' alt='Open Quotes<'>
                     </span>
-                    <span class='summary-number'>53</span>
-                    <span class='summary-title'> Open Quotes</span>
+                    <span class='summary-number'>".implode("",getActiveCustomers())."</span>
+                    <span class='summary-title'> Active Customers</span>
                 </li>
                 <li>
                     <span class='summary-icon'>
                             <img src='".$baseUrl ."/img/group.png' width='36' height='36' alt='Active Members'>
                     </span>
-                    <span class='summary-number'>654,321</span>
+                    <span class='summary-number'>".implode("",getTotalUsers())."</span>
                     <span class='summary-title'> Active Members</span>
                 </li>
                 <li>
                     <span class='summary-icon'>
                             <img src='".$baseUrl ."/img/folder_page.png' width='36' height='36' alt='Recent Conversions'>
                     </span>
-                    <span class='summary-number'>630</span>
-                    <span class='summary-title'> Recent Conversions</span></li>
+                    <span class='summary-number'>".implode("",getAllCustomers())."</span>
+                    <span class='summary-title'> Total Customers</span></li>
 
               </ul>
             </div>
