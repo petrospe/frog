@@ -78,8 +78,8 @@ if (Yii::app()->user->isSuperuser) {
                             <span class='summary-icon'>
                             <img src='".$baseUrl ."/img/credit.png' width='36' height='36' alt='Monthly Income'>
                     </span>
-                    <span class='summary-number'>$78,245</span>
-                    <span class='summary-title'> Monthly Income</span>
+                    <span class='summary-number'>".(implode("",getActiveCustomers())+implode("",getActiveContracts()))."</span>
+                    <span class='summary-title'> Active Services</span>
                 </li>
                 <li>
                     <span class='summary-icon'>
