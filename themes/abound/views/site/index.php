@@ -20,25 +20,33 @@ if (Yii::app()->user->isSuperuser) {
             <div class='span3 '>
                   <div class='stat-block'>
                     <ul>
-                          <li class='stat-graph inlinebar' id='weekly-visit'>8,4,6,5,9,10</li>
-                          <li class='stat-count'><span>$23,000</span><span>Weekly Sales</span></li>
-                          <li class='stat-percent'><span class='text-success stat-percent'>20%</span></li>
-                    </ul>
+                          <li class='stat-graph inlinebar' id='weekly-visit'></li>
+                          <li class='stat-count'><span>".implode("",getMonthCust("updatefrom"))."</span><span>Monthly Sales</span></li>";
+                          if((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))>0){
+                              echo "<li class='stat-percent'><span class='text-success stat-percent'>".(implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))."</span></li>";
+                          }  else {
+                              echo "<li class='stat-percent'><span class='text-error stat-percent'>".(implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))."</span></li>";
+                          }
+    echo "          </ul>
                   </div>
             </div>
             <div class='span3 '>
                   <div class='stat-block'>
                     <ul>
-                          <li class='stat-graph inlinebar' id='new-visits'>2,4,9,1,5,7,6</li>
-                          <li class='stat-count'><span>$123,780</span><span>Monthly Sales</span></li>
-                          <li class='stat-percent'><span class='text-error stat-percent'>-15%</span></li>
-                    </ul>
+                          <li class='stat-graph inlinebar' id='new-visits'></li>
+                          <li class='stat-count'><span>".implode("",getYearCust("updatefrom"))."</span><span>Yearly Sales</span></li>";
+                          if((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))>0){
+                              echo "<li class='stat-percent'><span class='text-success stat-percent'>".(implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))."</span></li>";
+                          }  else {
+                              echo "<li class='stat-percent'><span class='text-error stat-percent'>".(implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))."</span></li>";
+                          }
+    echo "          </ul>
                   </div>
             </div>
             <div class='span3 '>
                   <div class='stat-block'>
                     <ul>
-                          <li class='stat-graph inlinebar' id='unique-visits'>200,300,500,200,300,500,1000</li>
+                          <li class='stat-graph inlinebar' id='unique-visits'></li>
                           <li class='stat-count'><span>$12,456</span><span>Open Invoices</span></li>
                           <li class='stat-percent'><span class='text-success stat-percent'>10%</span></li>
                     </ul>
@@ -47,7 +55,7 @@ if (Yii::app()->user->isSuperuser) {
             <div class='span3 '>
                   <div class='stat-block'>
                     <ul>
-                          <li class='stat-graph inlinebar' id=''>1000,3000,6000,8000,3000,8000,10000</li>
+                          <li class='stat-graph inlinebar' id=''></li>
                           <li class='stat-count'><span>$25,000</span><span>Overdue</span></li>
                           <li class='stat-percent'><span><span class='text-success stat-percent'>20%</span></li>
                     </ul>

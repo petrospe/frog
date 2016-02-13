@@ -75,3 +75,28 @@
                 ->queryRow();
         return $ActiveContracts;
         }
+        function getNewbie($f){
+           $Newbie = Yii::app()->db->createCommand()
+                ->select($f)
+                ->from('almab_customers')
+                ->order('id DESC')
+                ->limit('1')
+                ->queryRow();
+        return $Newbie;
+        }
+        function getMonthCust($updmonth){
+           $MonthCust = Yii::app()->db->createCommand()
+                ->select('count(*)')
+                ->from('almab_customers')
+                ->where($updmonth.' >= DATE_ADD(LAST_DAY(DATE_SUB(NOW(), INTERVAL 2 MONTH)), INTERVAL 1 DAY) and '.$updmonth.' <= DATE_SUB(NOW(), INTERVAL 1 MONTH)')
+                ->queryRow();
+        return $MonthCust;
+        }
+        function getYearCust($updyear){
+           $YearCust = Yii::app()->db->createCommand()
+                ->select('count(*)')
+                ->from('almab_customers')
+                ->where($updyear.' >= DATE_SUB(NOW(),INTERVAL 1 YEAR)')
+                ->queryRow();
+        return $YearCust;
+        }

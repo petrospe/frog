@@ -113,7 +113,7 @@
     </div>
 	</div>
 </div>
-
+<!--
 <div class="subnav navbar navbar-fixed-top">
     <div class="navbar-inner">
     	<div class="container">
@@ -132,6 +132,8 @@
            <input type="text" class="search-query span2" placeholder="Search">
            
            </form>
-    	</div><!-- container -->
-    </div><!-- navbar-inner -->
-</div><!-- subnav -->
+    	</div>
+        
+    </div>
+</div>
+-->
