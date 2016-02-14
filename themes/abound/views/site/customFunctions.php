@@ -88,7 +88,7 @@
            $MonthCust = Yii::app()->db->createCommand()
                 ->select('count(*)')
                 ->from('almab_customers')
-                ->where($updmonth.' >= DATE_ADD(LAST_DAY(DATE_SUB(NOW(), INTERVAL 2 MONTH)), INTERVAL 1 DAY) and '.$updmonth.' <= DATE_SUB(NOW(), INTERVAL 1 MONTH)')
+                ->where($updmonth.' BETWEEN DATE_FORMAT(CURRENT_DATE - INTERVAL 1 MONTH, "%Y-%m-01") AND LAST_DAY(CURRENT_DATE - INTERVAL 1 MONTH)')
                 ->queryRow();
         return $MonthCust;
         }
@@ -96,7 +96,7 @@
            $YearCust = Yii::app()->db->createCommand()
                 ->select('count(*)')
                 ->from('almab_customers')
-                ->where($updyear.' >= DATE_SUB(NOW(),INTERVAL 1 YEAR)')
+                ->where($updyear.' BETWEEN DATE_SUB(NOW(), INTERVAL 365 DAY) AND NOW()')
                 ->queryRow();
         return $YearCust;
         }
