@@ -21,11 +21,11 @@ if (Yii::app()->user->isSuperuser) {
                   <div class='stat-block'>
                     <ul>
                           <li class='stat-graph inlinebar' id='weekly-visit'></li>
-                          <li class='stat-count'><span>".implode("",getMonthCust("updatefrom"))."</span><span>Monthly Sales</span></li>";
+                          <li class='stat-count'><span>".implode("",getMonthCust("updatefrom"))."</span><span>Monthly Sales. Ratio ".(implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))."</span></li>";
                           if((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))>0){
-                              echo "<li class='stat-percent'><span class='text-success stat-percent'>".(implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))."</span></li>";
+                              echo "<li class='stat-percent'><span class='text-success stat-percent'>".number_format(((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))*100/(implode("",getMonthCust("updatefrom")))),1)."%</span></li>";
                           }  else {
-                              echo "<li class='stat-percent'><span class='text-error stat-percent'>".(implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))."</span></li>";
+                              echo "<li class='stat-percent'><span class='text-error stat-percent'>".number_format(((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))*100/(implode("",getMonthCust("updatefrom")))),1)."%</span></li>";
                           }
     echo "          </ul>
                   </div>
@@ -34,30 +34,37 @@ if (Yii::app()->user->isSuperuser) {
                   <div class='stat-block'>
                     <ul>
                           <li class='stat-graph inlinebar' id='new-visits'></li>
-                          <li class='stat-count'><span>".implode("",getYearCust("updatefrom"))."</span><span>Yearly Sales</span></li>";
+                          <li class='stat-count'><span>".implode("",getYearCust("updatefrom"))."</span><span>Yearly Sales. Ratio ".(implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))."</span></li>";
                           if((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))>0){
-                              echo "<li class='stat-percent'><span class='text-success stat-percent'>".(implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))."</span></li>";
+                              echo "<li class='stat-percent'><span class='text-success stat-percent'>".number_format(((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))*100/implode("",getYearCust("updateto"))),1)."%</span></li>";
                           }  else {
-                              echo "<li class='stat-percent'><span class='text-error stat-percent'>".(implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))."</span></li>";
+                              echo "<li class='stat-percent'><span class='text-error stat-percent'>".number_format(((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))*100/implode("",getYearCust("updateto"))),1)."%</span></li>";
                           }
     echo "          </ul>
                   </div>
             </div>
             <div class='span3 '>
                   <div class='stat-block'>
-                    <ul>
-                          <li class='stat-graph inlinebar' id='unique-visits'></li>
-                          <li class='stat-count'><span>$12,456</span><span>Open Invoices</span></li>
-                          <li class='stat-percent'><span class='text-success stat-percent'>10%</span></li>
+                    <ul>";
+                        if(strlen(implode("",getMostUsers("descr")))>10){
+                            echo "<li class='stat-count'><span style='font-size:12px;'>".substr((implode("",getMostUsers("descr"))), 0, 29)."...</span><span>Most User's Customer</span></li>";
+                        } else {
+                            echo "<li class='stat-count'><span>".substr((implode("",getMostUsers("descr"))), 0, 23)."...</span><span>Most User's Customer</span></li>";
+                        }
+                          $usernum = "SUBSTRING_INDEX(SUBSTRING_INDEX(dbserial, '-', 2), '-', -1)";
+    echo "                <li class='stat-percent'><span class='text-success stat-percent'>".implode("",getMostUsers("$usernum"))."</span></li>
                     </ul>
                   </div>
             </div>
             <div class='span3 '>
                   <div class='stat-block'>
-                    <ul>
-                          <li class='stat-graph inlinebar' id=''></li>
-                          <li class='stat-count'><span>$25,000</span><span>Overdue</span></li>
-                          <li class='stat-percent'><span><span class='text-success stat-percent'>20%</span></li>
+                    <ul>";
+                        if(strlen(implode("",getLongestCust("descr")))>10){
+                            echo "<li class='stat-count'><span style='font-size:12px;'>".substr((implode("",getLongestCust("descr"))), 0, 29)."...</span><span>Long time service from ".implode("",getLongestCust("updatefrom"))."</span></li>";
+                        } else {
+                            echo "<li class='stat-count'><span>".substr((implode("",getLongestCust("descr"))), 0, 23)."...</span><span>Long time service</span></li>";
+                        }
+    echo "                <li class='stat-percent'><span class='text-success stat-percent'>".((implode("",getLongestCust("updateto")))-(implode("",getLongestCust("updatefrom"))))."</span></li>
                     </ul>
                   </div>
             </div>

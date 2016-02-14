@@ -100,3 +100,27 @@
                 ->queryRow();
         return $YearCust;
         }
+        function getExpCust($expdate){
+           $ExpCust = Yii::app()->db->createCommand()
+                ->select('count(*)')
+                ->from('almab_customers')
+                ->where($expdate.' BETWEEN NOW() AND DATE_ADD(NOW(), INTERVAL 30 DAY)')
+                ->queryRow();
+        return $ExpCust;
+        }
+        function getMostUsers($MostUsers){
+           $MostUsers = Yii::app()->db->createCommand()
+                ->select($MostUsers)
+                ->from('almab_customers')
+                ->where('(SUBSTRING_INDEX(SUBSTRING_INDEX(dbserial, "-", 2), "-", -1)) = (select MAX(CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(dbserial, "-", 2), "-", -1)AS UNSIGNED)) FROM `almab_customers`)')
+                ->queryRow();
+        return $MostUsers;
+        }
+        function getLongestCust($TheLongest){
+           $LongestCust = Yii::app()->db->createCommand()
+                ->select($TheLongest)
+                ->from('almab_customers')
+                ->where('updateto > NOW() AND (updateto - updatefrom = (Select max(updateto - updatefrom) from `almab_customers`))')
+                ->queryRow();
+        return $LongestCust;
+        }
