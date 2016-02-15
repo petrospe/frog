@@ -149,21 +149,37 @@ if (Yii::app()->user->isSuperuser) {
 		));
           echo "</div><!--/span-->
 	<div class='span6'>";
-	
-		 $this->widget('zii.widgets.grid.CGridView', array(
-			/*'type'=>'striped bordered condensed',*/
-			'htmlOptions'=>array('class'=>'table table-striped table-bordered table-condensed'),
-			'dataProvider'=>$gridDataProvider,
-			'template'=>"{items}",
-			'columns'=>array(
-				array('name'=>'id', 'header'=>'#'),
-				array('name'=>'firstName', 'header'=>'First name'),
-				array('name'=>'lastName', 'header'=>'Last name'),
-				array('name'=>'language', 'header'=>'Language'),
-				array('name'=>'usage', 'header'=>'Usage', 'type'=>'raw'),
-				
-			),
-		)); 
+	$dataProvider2=new CActiveDataProvider('AlmabCustomers', array(
+            'criteria'=>array(
+                'condition'=>'updateto>NOW()',
+                'order'=>'updateto',
+            ),
+            'pagination'=>array(
+                'pageSize'=>20,
+            ),
+        ));
+        $this->widget('zii.widgets.grid.CGridView', array(
+               /*'type'=>'striped bordered condensed',*/
+               'htmlOptions'=>array('class'=>'table table-striped table-bordered table-condensed'),
+               'dataProvider'=>$dataProvider2,
+               'template'=>"{items}",
+               'columns'=>array(
+                       'id',
+                       array(
+                           'name'=>'Customer Name',
+                           'value'=>'$data->descr',
+                       ),
+                       'email',
+                       array(            // display 'create_time' using an expression
+                           'name'=>'Expire',
+                           'value'=>'date("M j, Y", strtotime($data->updateto))',
+                       ),
+                       array(            // display 'create_time' using an expression
+                           'name'=>'Version',
+                           'value'=>'substr($data->dbserial, 0, -20)',
+                       ),
+               ),
+       )); 
         	
 	echo "</div><!--/span-->
 </div><!--/row-->
