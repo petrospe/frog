@@ -39,12 +39,13 @@
         <link rel="alternate stylesheet" type="text/css" media="screen" title="style7" href="<?php echo $baseUrl;?>/css/style-red.css" />
 	  <?php
 	  $cs->registerScriptFile($baseUrl.'/js/bootstrap.min.js');
-	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.sparkline.js');
-	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.flot.min.js');
-	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.flot.pie.min.js');
-	  $cs->registerScriptFile($baseUrl.'/js/charts.js');
-	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.knob.js');
-	  $cs->registerScriptFile($baseUrl.'/js/plugins/jquery.masonry.min.js');
+          $cs->registerScriptFile($baseUrl.'/js/plugins/Chart.js');
+          $cs->registerScriptFile($baseUrl.'/js/plugins/Chart.Bar.js');
+          $cs->registerScriptFile($baseUrl.'/js/plugins/Chart.Core.js');
+          $cs->registerScriptFile($baseUrl.'/js/plugins/Chart.Line.js');
+          $cs->registerScriptFile($baseUrl.'/js/plugins/Chart.PolarArea.js');
+          $cs->registerScriptFile($baseUrl.'/js/plugins/Chart.Radar.js');
+          $cs->registerScriptFile($baseUrl.'/js/plugins/Chart.Doughnut.js');
 	  $cs->registerScriptFile($baseUrl.'/js/styleswitcher.js');
 	?>
   </head>
