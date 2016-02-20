@@ -53,7 +53,11 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'file_type',
                  */
 		'file_size',
-		'file_path',
+                array(
+                    'type'=>'raw',
+                    'value'=>'CHtml::link($data->file_path, $data->file_path ,array("target"=>"_blank"))',
+                    'name'=>'file_path',
+                    ),
 		/*
 		'file_category_id',
 		'file_support_id',
