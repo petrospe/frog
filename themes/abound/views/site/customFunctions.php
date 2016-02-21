@@ -133,6 +133,8 @@
     }
 /* Pie DataSet */        
 $datapie1 = array();
-$sql1 = "SELECT SUBSTRING_INDEX(dbserial, '-', 1), COUNT(SUBSTRING_INDEX(dbserial, '-', 1)) FROM `almab_customers`WHERE SUBSTRING_INDEX(dbserial, '-', 1) IS NOT null GROUP BY SUBSTRING_INDEX(dbserial, '-', 1)";
-$dbCommand = Yii::app()->db->createCommand($sql1);
-$datapie1 = $dbCommand->queryAll();
+$sql1 = "SELECT CONCAT('Alma ',SUBSTRING_INDEX(dbserial, '-', 1)) as label, COUNT(SUBSTRING_INDEX(dbserial, '-', 1)) as value FROM `almab_customers`WHERE SUBSTRING_INDEX(dbserial, '-', 1) IS NOT null GROUP BY SUBSTRING_INDEX(dbserial, '-', 1)";
+$dbCommand1 = Yii::app()->db->createCommand($sql1);
+$datapie1 = $dbCommand1->queryAll();
+
+$json1 = json_encode($datapie1);
