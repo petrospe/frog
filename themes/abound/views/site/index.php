@@ -7,7 +7,7 @@ $baseUrl = Yii::app()->theme->baseUrl;
 <?php
 if (Yii::app()->user->isSuperuser) {
     require_once Yii::app()->basePath . '/../themes/abound/views/site/customFunctions.php';
-    print_r($json1);
+    //print_r($daterange);
     echo "<div class='row-fluid'>
             <div class='span3 '>
                   <div class='stat-block'>
@@ -207,7 +207,7 @@ if (Yii::app()->user->isSuperuser) {
 	<div class='span6'>";
 
 		$this->beginWidget('zii.widgets.CPortlet', array(
-			'title'=>'<span class="icon-th-large"></span>Income Chart',
+			'title'=>'<span class="icon-th-large"></span>Product Sales',
 			'titleCssClass'=>''
 		));
 
@@ -222,7 +222,7 @@ if (Yii::app()->user->isSuperuser) {
     <div class='span6'>";
 
 		$this->beginWidget('zii.widgets.CPortlet', array(
-			'title'=>'<span class="icon-th-list"></span> Product Sales',
+			'title'=>'<span class="icon-th-list"></span>Active Product Sales',
 			'titleCssClass'=>''
 		));
 
@@ -267,41 +267,9 @@ if (Yii::app()->user->isSuperuser) {
 
 		}
         /* doughnut */
-		var doughnutData = [
-				{
-					value: 300,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Red"
-				},
-				{
-					value: 50,
-					color: "#46BFBD",
-					highlight: "#5AD3D1",
-					label: "Green"
-				},
-				{
-					value: 100,
-					color: "#FDB45C",
-					highlight: "#FFC870",
-					label: "Yellow"
-				},
-				{
-					value: 40,
-					color: "#949FB1",
-					highlight: "#A8B3C5",
-					label: "Grey"
-				},
-				{
-					value: 120,
-					color: "#4D5360",
-					highlight: "#616774",
-					label: "Dark Grey"
-				}
-
-			];             
+		var doughnutData = <?php echo $json1;?>;             
         /* pie */            
-                var pieData = <?php echo $json1;?>;
+                var pieData = <?php echo $json2;?>;
 
 window.onload = function(){
 		var ctx = document.getElementById("canvas").getContext("2d");

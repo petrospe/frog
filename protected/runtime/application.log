@@ -8083,3 +8083,1257 @@ Stack trace:
 #16 {main}
 REQUEST_URI=/frog/index.php?r=site/index
 ---
+2016/02/21 17:46:31 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (SELECT min(updatefrom) FROM almab_customers WHERE updatefrom != 0 ) at position 0 (S): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('SELECT min(upda...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 17:49:30 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (SELECT min(updatefrom) FROM almab_customers WHERE updatefrom != '0') at position 0 (S): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('SELECT min(upda...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 17:49:33 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (SELECT min(updatefrom) FROM almab_customers WHERE updatefrom != '0') at position 0 (S): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('SELECT min(upda...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 17:49:51 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (SELECT min(updatefrom) FROM almab_customers WHERE updatefrom NOT NULL) at position 0 (S): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('SELECT min(upda...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 17:50:30 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (SELECT min(updatefrom) FROM almab_customers WHERE updatefrom != '0000-00-00') at position 0 (S): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('SELECT min(upda...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 17:52:46 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (SELECT min(updatefrom) FROM almab_customers WHERE updatefrom != '0') at position 0 (S): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:157
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(157): DateTime->__construct('SELECT min(upda...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 17:57:59 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (stE1ECEET 02572(000000p21pm29Europe/AthensfSun, 21 Feb 2016 17:57:59 +0200201602) FebruaryR+0200Feb pmSunday02pmb_2016-02-21T17:57:59+02:000000005929201602Europe/AthensSun, 21 Feb 2016 17:57:59 +020059 0717ERE 000000p21pm29Europe/AthensfSun, 21 Feb 2016 17:57:59 +0200201602 != '0') at position 0 (s): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('stE1ECEET 02572...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 17:59:19 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:164)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (164)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 18:00:52 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:164)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (164)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 18:03:59 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (stE1ECEET 02032(000000p21pm29Europe/AthensfSun, 21 Feb 2016 18:03:59 +0200201602) FebruaryR+0200Feb pmSunday02pmb_2016-02-21T18:03:59+02:000000005929201602Europe/AthensSun, 21 Feb 2016 18:03:59 +020059 0718ERE 000000p21pm29Europe/AthensfSun, 21 Feb 2016 18:03:59 +0200201602 != '0') at position 0 (s): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('stE1ECEET 02032...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 19:21:06 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (stE1ECEET 02212(000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:21:06 +0200201602) FebruaryR+0200Feb pmSunday02pmb_2016-02-21T19:21:06+02:000000000629201602Europe/AthensSun, 21 Feb 2016 19:21:06 +020006 0719ERE 000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:21:06 +0200201602 != 0) at position 0 (s): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('stE1ECEET 02212...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 19:24:08 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (stE1ECEET 02242(000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:24:08 +0200201602) FebruaryR+0200Feb pmSunday02pmb_2016-02-21T19:24:08+02:000000000829201602Europe/AthensSun, 21 Feb 2016 19:24:08 +020008 0719ERE 000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:24:08 +0200201602 != 0) at position 0 (s): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('stE1ECEET 02242...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 19:47:01 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (stE1ECEET 02472(000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:47:01 +0200201602) FebruaryR+0200Feb pmSunday02pmb_2016-02-21T19:47:01+02:000000000129201602Europe/AthensSun, 21 Feb 2016 19:47:01 +020001 0719ERE 000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:47:01 +0200201602 != 0) at position 0 (s): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('stE1ECEET 02472...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 19:47:32 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (stE1ECEET 02472(000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:47:32 +0200201602) FebruaryR+0200Feb pmSunday02pmb_2016-02-21T19:47:32+02:000000003229201602Europe/AthensSun, 21 Feb 2016 19:47:32 +020032 0719ERE 000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:47:32 +0200201602 != 0) at position 0 (s): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('stE1ECEET 02472...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 19:48:41 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:165)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (165)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 19:52:36 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (stE1ECEET 02522(000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:52:36 +0200201602) FebruaryR+0200Feb pmSunday02pmb_2016-02-21T19:52:36+02:000000003629201602Europe/AthensSun, 21 Feb 2016 19:52:36 +020036 0719ERE 000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:52:36 +0200201602 != 0) at position 0 (s): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('stE1ECEET 02522...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 19:53:18 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (stE1ECEET 02532(000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:53:18 +0200201602) FebruaryR+0200Feb pmSunday02pmb_2016-02-21T19:53:18+02:000000001829201602Europe/AthensSun, 21 Feb 2016 19:53:18 +020018 0719ERE 000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:53:18 +0200201602 != '0') at position 0 (s): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('stE1ECEET 02532...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 19:57:21 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (stE1ECEET 02572(000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:57:21 +0200201602) FebruaryR+0200Feb pmSunday02pmb_2016-02-21T19:57:21+02:000000002129201602Europe/AthensSun, 21 Feb 2016 19:57:21 +020021 0719ERE 000000p21pm29Europe/AthensfSun, 21 Feb 2016 19:57:21 +0200201602 != 0) at position 0 (s): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('stE1ECEET 02572...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 19:57:49 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (SELECT min(updatefrom) FROM almab_customers WHERE updatefrom != 0) at position 0 (S): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('SELECT min(upda...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 19:58:07 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (SELECT min(updatefrom) FROM almab_customers WHERE updatefrom != '0') at position 0 (S): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('SELECT min(upda...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 19:58:29 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (SELECT min(updatefrom) FROM almab_customers WHERE updatefrom != '0000-00-00') at position 0 (S): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:155
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(155): DateTime->__construct('SELECT min(upda...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 20:00:48 [error] [exception.Exception] exception 'Exception' with message 'DatePeriod::__construct(): This constructor accepts either (DateTimeInterface, DateInterval, int) OR (DateTimeInterface, DateInterval, DateTime) OR (string) as arguments.' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:161
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(161): DatePeriod->__construct('2016-02-21', Object(DateInterval), '2016-02-21')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 20:02:51 [error] [exception.Exception] exception 'Exception' with message 'DatePeriod::__construct(): This constructor accepts either (DateTimeInterface, DateInterval, int) OR (DateTimeInterface, DateInterval, DateTime) OR (string) as arguments.' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:160
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(160): DatePeriod->__construct(false, Object(DateInterval), false)
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 20:08:49 [error] [php] Invalid argument supplied for foreach() (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:161)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (161)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 21:15:19 [error] [php] Invalid argument supplied for foreach() (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:161)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (161)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 21:21:58 [error] [php] Invalid argument supplied for foreach() (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:158)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (158)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 21:24:09 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:170)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (170)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 21:26:09 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:170)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (170)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 21:28:46 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:172)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (172)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 21:36:02 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:172)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (172)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 21:43:32 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:172)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (172)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 21:50:25 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:172)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (172)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 21:55:45 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:172)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (172)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/21 22:13:49 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (stE1ECEET 02132(000000p21pm29Europe/AthensfSun, 21 Feb 2016 22:13:49 +0200201602) FebruaryR+0200Feb pmSunday02pmb_2016-02-21T22:13:49+02:000000004929201602Europe/AthensSun, 21 Feb 2016 22:13:49 +020049 0722ERE 000000p21pm29Europe/AthensfSun, 21 Feb 2016 22:13:49 +0200201602 != 0) at position 0 (s): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:154
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(154): DateTime->__construct('stE1ECEET 02132...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/21 22:19:43 [error] [php] mktime() expects parameter 4 to be long, string given (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:167)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#6 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (167)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (182)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+2016/02/21 22:20:55 [error] [php] mktime() expects parameter 4 to be long, string given (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:167)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#6 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (167)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (182)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+2016/02/21 23:11:54 [error] [php] mktime() expects parameter 4 to be long, string given (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:167)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#6 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (167)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (182)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+2016/02/21 23:48:28 [error] [php] mktime() expects parameter 4 to be long, string given (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:167)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#6 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (167)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (182)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+2016/02/22 00:10:25 [error] [php] Undefined variable: dates (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:166)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (166)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (169)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+2016/02/22 00:16:26 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (SELECT max(updateto) FROM almab_customers WHERE updateto != 0) at position 0 (S): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:160
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(160): DateTime->__construct('SELECT max(upda...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(176): getDatesFromRange('SELECT min(upda...', 'SELECT max(upda...')
+#2 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#4 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#8 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#14 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/22 00:20:57 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (ndE1ECEET 02202(000000p22am29Europe/AthensfMon, 22 Feb 2016 00:20:57 +0200201602) FebruaryR+0200Feb amMonday02amb_2016-02-22T00:20:57+02:000000005729201602Europe/AthensMon, 22 Feb 2016 00:20:57 +020057 0800ERE 000000p22am29Europe/AthensfMon, 22 Feb 2016 00:20:57 +0200201602 != 0) at position 0 (n): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:154
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(154): DateTime->__construct('ndE1ECEET 02202...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/22 00:29:06 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (ndE1ECEET 02292(000000p22am29Europe/AthensfMon, 22 Feb 2016 00:29:06 +0200201602) FebruaryR+0200Feb amMonday02amb_2016-02-22T00:29:06+02:000000000629201602Europe/AthensMon, 22 Feb 2016 00:29:06 +020006 0800ERE 000000p22am29Europe/AthensfMon, 22 Feb 2016 00:29:06 +0200201602 != 0) at position 0 (n): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:156
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(156): DateTime->__construct('ndE1ECEET 02292...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/22 00:29:51 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (SELECT min(updatefrom) FROM almab_customers WHERE updatefrom != 0) at position 0 (S): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:156
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(156): DateTime->__construct('SELECT min(upda...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/22 00:31:52 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (ndE1ECEET 02312(000000p22am29Europe/AthensfMon, 22 Feb 2016 00:31:52 +0200201602) FebruaryR+0200Feb amMonday02amb_2016-02-22T00:31:52+02:000000005229201602Europe/AthensMon, 22 Feb 2016 00:31:52 +020052 0800ERE 000000p22am29Europe/AthensfMon, 22 Feb 2016 00:31:52 +0200201602 != 0) at position 0 (n): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:154
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(154): DateTime->__construct('ndE1ECEET 02312...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/22 00:32:52 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (ndE1ECEET 02322(000000p22am29Europe/AthensfMon, 22 Feb 2016 00:32:52 +0200201602) FebruaryR+0200Feb amMonday02amb_2016-02-22T00:32:52+02:000000005229201602Europe/AthensMon, 22 Feb 2016 00:32:52 +020052 0800ERE 000000p22am29Europe/AthensfMon, 22 Feb 2016 00:32:52 +0200201602 != 0) at position 0 (n): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:154
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(154): DateTime->__construct('ndE1ECEET 02322...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/22 00:33:49 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (ndE1ECEET 02332(000000p22am29Europe/AthensfMon, 22 Feb 2016 00:33:49 +0200201602) FebruaryR+0200Feb amMonday02amb_2016-02-22T00:33:49+02:000000004929201602Europe/AthensMon, 22 Feb 2016 00:33:49 +020049 0800ERE 000000p22am29Europe/AthensfMon, 22 Feb 2016 00:33:49 +0200201602 != 0) at position 0 (n): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:154
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(154): DateTime->__construct('ndE1ECEET 02332...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/22 00:37:53 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (ndE1ECEET 02372(000000p22am29Europe/AthensfMon, 22 Feb 2016 00:37:53 +0200201602) FebruaryR+0200Feb amMonday02amb_2016-02-22T00:37:53+02:000000005329201602Europe/AthensMon, 22 Feb 2016 00:37:53 +020053 0800ERE 000000p22am29Europe/AthensfMon, 22 Feb 2016 00:37:53 +0200201602 != 0) at position 0 (n): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:154
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(154): DateTime->__construct('ndE1ECEET 02372...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/22 00:37:56 [error] [exception.Exception] exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (ndE1ECEET 02372(000000p22am29Europe/AthensfMon, 22 Feb 2016 00:37:56 +0200201602) FebruaryR+0200Feb amMonday02amb_2016-02-22T00:37:56+02:000000005629201602Europe/AthensMon, 22 Feb 2016 00:37:56 +020056 0800ERE 000000p22am29Europe/AthensfMon, 22 Feb 2016 00:37:56 +0200201602 != 0) at position 0 (n): The timezone could not be found in the database' in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:154
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(154): DateTime->__construct('ndE1ECEET 02372...')
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once('/Library/WebSer...')
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=site/index
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/02/22 00:39:03 [error] [php] date_format() expects parameter 1 to be DateTimeInterface, string given (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:154)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (154)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/22 00:39:06 [error] [php] date_format() expects parameter 1 to be DateTimeInterface, string given (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:154)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (154)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/22 00:39:50 [error] [php] include(Date.php): failed to open stream: No such file or directory (/Library/WebServer/Documents/frog/framework/YiiBase.php:432)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php(154): spl_autoload_call()
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(9): require_once()
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#7 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (154)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/22 00:40:29 [error] [php] date_format() expects parameter 1 to be DateTimeInterface, string given (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:154)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (154)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/22 00:44:10 [error] [php] date() expects parameter 2 to be long, string given (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:154)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (154)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/22 00:48:17 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:167)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (167)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/22 00:49:52 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:167)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (167)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/22 00:49:56 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:167)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (167)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/22 00:50:50 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:167)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (167)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/22 00:51:40 [error] [php] Undefined variable: sql3 (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:169)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (169)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/22 00:52:06 [error] [php] Undefined variable: json3 (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:10)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (10)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/02/22 00:52:27 [error] [php] Undefined variable: data3 (/Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php:170)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/customFunctions.php (170)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (9)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/02/22 00:52:58 [error] [php] Undefined variable: data3 (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:10)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (10)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/02/22 00:53:29 [error] [php] Undefined variable: data3 (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:10)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (10)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/02/22 00:53:59 [error] [php] Undefined variable: sql3 (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:10)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (10)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/02/22 00:54:26 [error] [php] Undefined variable: date (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:10)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=site/index
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (10)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
