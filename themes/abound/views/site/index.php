@@ -7,7 +7,9 @@ $baseUrl = Yii::app()->theme->baseUrl;
 <?php
 if (Yii::app()->user->isSuperuser) {
     require_once Yii::app()->basePath . '/../themes/abound/views/site/customFunctions.php';
-    //print_r($daterange);
+//    foreach($daterange as $date){
+//    echo $date->format("Y-m-d").",";
+//}
     echo "<div class='row-fluid'>
             <div class='span3 '>
                   <div class='stat-block'>

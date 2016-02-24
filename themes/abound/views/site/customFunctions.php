@@ -150,22 +150,29 @@ $json2 = json_encode($data2);
 
 /* Line DataSet */
 //$sqlMinDate = "SELECT min(updatefrom) FROM almab_customers WHERE updatefrom != 0";
+//$runSqlMinDate = Yii::app()->db->createCommand($sqlMinDate);
+//$resSqlMinDate = $runSqlMinDate ->queryAll();
+//$asResSqlMinDate = implode("",$resSqlMinDate[0]);
+//
 //$sqlMaxDate = "SELECT max(updateto) FROM almab_customers WHERE updateto != 0";
-//$begin = new DateTime(date("Y-m-d", strtotime($sqlMinDate)));
-//$end = new DateTime(date("Y-m-d", strtotime($sqlMaxDate)));
+//$runSqlMaxDate = Yii::app()->db->createCommand($sqlMaxDate);
+//$resSqlMaxDate = $runSqlMaxDate->queryAll();
+//$asResSqlMaxDate = implode("",$resSqlMaxDate[0]);
 //
-//$interval = new DateInterval('P1D');
-//$daterange = new DatePeriod($begin, $interval ,$end);
+//$begin = new DateTime($asResSqlMinDate);
+//$end = new DateTime($asResSqlMaxDate);
 //
-//if (is_array($daterange) || is_object($daterange)){
-//    foreach($daterange as $date){
-//        echo $date->format("Y-m-d").",";
-//    }
+//$daterange = new DatePeriod($begin, new DateInterval('P1D'), $end);
+//$dates = array();
+//foreach($daterange as $key=>$date){
+//    $dates[$key]=$date->format("Y-m-d").",";
 //}
 //
-//$data3 = array();
-//$sql3 = "SELECT COUNT(*) as data FROM almab_customers WHERE updateto IN (".implode(",",$date).")";
-//$dbCommand3 = Yii::app()->db->createCommand($sql3);
-//$data3 = $dbCommand3->queryAll();
+//    $data3 = array();
+//    $sql3 = "SELECT COUNT(*) as data FROM almab_customers WHERE updatefrom IN (".array($dates).") AND updateto IN (".array($dates).")";
+//    $dbCommand3 = Yii::app()->db->createCommand($sql3);
+//    $data3 = $dbCommand3->queryAll();
 //
-//$json3 = json_encode($data3);
+//    $json3 = json_encode($data3);
+
+
