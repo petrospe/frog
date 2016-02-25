@@ -7,6 +7,7 @@ $baseUrl = Yii::app()->theme->baseUrl;
 <?php
 if (Yii::app()->user->isSuperuser) {
     require_once Yii::app()->basePath . '/../themes/abound/views/site/customFunctions.php';
+//    print_r($date);
 //    foreach($daterange as $date){
 //    echo $date->format("Y-m-d").",";
 //}
@@ -243,7 +244,7 @@ if (Yii::app()->user->isSuperuser) {
         /* line */
 		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 		var lineChartData = {
-			labels : ["January","February","March","April","May","June","July"],
+			labels : ["2006-07-30","2006-12-31","2007-12-31","2008-12-31","2009-12-31","2010-12-31","2011-12-31","2012-12-31","2013-12-31","2014-12-31","2015-12-31","2016-12-31"],
 			datasets : [
 				{
 					label: "My First dataset",
