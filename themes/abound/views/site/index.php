@@ -7,10 +7,6 @@ $baseUrl = Yii::app()->theme->baseUrl;
 <?php
 if (Yii::app()->user->isSuperuser) {
     require_once Yii::app()->basePath . '/../themes/abound/views/site/customFunctions.php';
-//    print_r($date);
-//    foreach($daterange as $date){
-//    echo $date->format("Y-m-d").",";
-//}
     echo "<div class='row-fluid'>
             <div class='span3 '>
                   <div class='stat-block'>
@@ -242,30 +238,30 @@ if (Yii::app()->user->isSuperuser) {
 ?>
         <script>
         /* line */
-		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+//		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 		var lineChartData = {
-			labels : ["2006-07-30","2006-12-31","2007-12-31","2008-12-31","2009-12-31","2010-12-31","2011-12-31","2012-12-31","2013-12-31","2014-12-31","2015-12-31","2016-12-31"],
+			labels : <?php echo json_encode($label); ?>,
 			datasets : [
 				{
-					label: "My First dataset",
+//					label: "My First dataset",
 					fillColor : "rgba(220,220,220,0.2)",
 					strokeColor : "rgba(220,220,220,1)",
 					pointColor : "rgba(220,220,220,1)",
 					pointStrokeColor : "#fff",
 					pointHighlightFill : "#fff",
 					pointHighlightStroke : "rgba(220,220,220,1)",
-					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+					data : <?php echo json_encode($data3); ?>
 				},
-				{
-					label: "My Second dataset",
-					fillColor : "rgba(151,187,205,0.2)",
-					strokeColor : "rgba(151,187,205,1)",
-					pointColor : "rgba(151,187,205,1)",
-					pointStrokeColor : "#fff",
-					pointHighlightFill : "#fff",
-					pointHighlightStroke : "rgba(151,187,205,1)",
-					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-				}
+//				{
+//					label: "My Second dataset",
+//					fillColor : "rgba(151,187,205,0.2)",
+//					strokeColor : "rgba(151,187,205,1)",
+//					pointColor : "rgba(151,187,205,1)",
+//					pointStrokeColor : "#fff",
+//					pointHighlightFill : "#fff",
+//					pointHighlightStroke : "rgba(151,187,205,1)",
+//					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+//				}
 			]
 
 		}

@@ -163,15 +163,14 @@ $begin = new DateTime("2006-07-30");
 $end = new DateTime(date("Y-m-d"));
 
 $daterange = new DatePeriod($begin, new DateInterval('P1D'), $end);
-
+$data3 = array();
+$label = array();
 foreach($daterange as $obj){
     $date = $obj->format("Y-m-d");
-    $sql3 = "SELECT COUNT(*) as data, $date as label FROM almab_customers WHERE updatefrom <= $date AND updateto >= $date";
-    $dbCommand3 = Yii::app()->db->createCommand($sql3);
-    $data3[] = $dbCommand3->queryAll();
-    
+    $label[] = $date;
+    $data3[] = implode("",(Yii::app()->db->createCommand("SELECT COUNT(*) as data FROM almab_customers WHERE updatefrom <= :date AND updateto >= :date")->bindValue('date',$date)->queryRow()));
 }
-$json3 = json_encode($data3);
+
 //$data3 = array();
 //$label3 = array();
 //foreach ($daterange as $obj) {
