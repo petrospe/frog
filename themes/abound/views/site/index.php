@@ -243,7 +243,7 @@ if (Yii::app()->user->isSuperuser) {
 			labels : <?php echo json_encode($label); ?>,
 			datasets : [
 				{
-//					label: "My First dataset",
+					label: "Active Services",
 					fillColor : "rgba(220,220,220,0.2)",
 					strokeColor : "rgba(220,220,220,1)",
 					pointColor : "rgba(220,220,220,1)",
@@ -272,7 +272,7 @@ if (Yii::app()->user->isSuperuser) {
 
 window.onload = function(){
 		var ctx = document.getElementById("canvas").getContext("2d");
-		window.myLine = new Chart(ctx).Line(lineChartData, {responsive: true});
+		window.myLine = new Chart(ctx).Line(lineChartData, {responsive: true, showXLabels: 10});
 	
                 var ctx = document.getElementById("chart-area1").getContext("2d");
                 window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
