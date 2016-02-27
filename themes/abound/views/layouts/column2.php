@@ -36,7 +36,7 @@
         <br>
         <?php
         if (Yii::app()->user->isSuperuser) {
-        require_once Yii::app()->basePath . '/../themes/abound/views/site/customFunctions.php';
+        require_once Yii::app()->basePath . '/../themes/abound/views/site/column2Functions.php';
         echo "<table class='table table-striped table-bordered'>
                 <tbody>
                   <tr>

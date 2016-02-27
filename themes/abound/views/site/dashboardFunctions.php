@@ -1,71 +1,5 @@
 <?php
-/* Custom functions used on column2 layout and dashboard for abound theme */
-    /* Bandwith Usage Server speed*/
-        $link = 'http://cachefly.cachefly.net/1mb.test';
-        $ch = curl_init($link);
-        $start = time();
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($ch, CURLOPT_HEADER, TRUE);
-        curl_setopt($ch, CURLOPT_NOBODY, TRUE);
-        $data = curl_exec($ch);
-        $size = curl_getinfo($ch, CURLINFO_CONTENT_LENGTH_DOWNLOAD);
-        curl_close($ch);
-        $file = file_get_contents($link);
-        $end = time();
-        $time = $end - $start;
-        $size = $size / 1048576;
-        $speed = $size / $time; // MB/s, 4MB/s is the 100%
-    /* Server free space */
-        $df = disk_free_space("/"); //bytes
-        $ds = disk_total_space("/");
-        //$freegb = $df / 1073741824;
-    /* Memory Usage */
-        function convert($size)
-            {
-                $unit=array('b','kb','mb','gb','tb','pb');
-                return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
-            }
-        $memuse = convert(memory_get_usage(true));
-    /* CPU Usage */
-        function get_server_cpu_usage(){
-                $load = sys_getloadavg();
-                return $load[0];
-            }
-    //All Customers
-    function getAllCustomers(){
-       $AllCustomers = Yii::app()->db->createCommand()
-            ->select(array('count(*)'))
-            ->from('almab_customers')
-            ->queryRow();
-    return $AllCustomers;
-    }
-    //Active Customers
-    function getActiveCustomers(){
-       $ActiveCustomers = Yii::app()->db->createCommand()
-            ->select(array('count(*)'))
-            ->from('almab_customers')
-            ->where('updateto > NOW()')
-            ->queryRow();
-    return $ActiveCustomers;
-    }
-    //Inactive Customers
-    function getInactiveCustomers(){
-       $InactiveCustomers = Yii::app()->db->createCommand()
-            ->select(array('count(*)'))
-            ->from('almab_customers')
-            ->where('updateto < NOW()')
-            ->queryRow();
-    return $InactiveCustomers;
-    }
-    //Users
-    function getTotalUsers(){
-       $TotalUsers = Yii::app()->db->createCommand()
-            ->select(array('sum(SUBSTRING_INDEX(SUBSTRING_INDEX(dbserial, "-", 2), "-", -1))'))
-            ->from('almab_customers')
-            ->where('descr IS NOT NULL')
-            ->queryRow();
-    return $TotalUsers;
-    }
+/* Custom functions used on dashboard for abound theme */
     //Contracts
     function getActiveContracts(){
        $ActiveContracts = Yii::app()->db->createCommand()
@@ -75,6 +9,7 @@
             ->queryRow();
     return $ActiveContracts;
     }
+    //The last customer
     function getNewbie($f){
        $Newbie = Yii::app()->db->createCommand()
             ->select($f)
@@ -84,6 +19,7 @@
             ->queryRow();
     return $Newbie;
     }
+    //New customers per month
     function getMonthCust($updmonth){
        $MonthCust = Yii::app()->db->createCommand()
             ->select('count(*)')
@@ -92,6 +28,7 @@
             ->queryRow();
     return $MonthCust;
     }
+    //New customers per year
     function getYearCust($updyear){
        $YearCust = Yii::app()->db->createCommand()
             ->select('count(*)')
@@ -100,6 +37,7 @@
             ->queryRow();
     return $YearCust;
     }
+    //Expiring services in current 30 days
     function getExpCust($expdate){
        $ExpCust = Yii::app()->db->createCommand()
             ->select('count(*)')
@@ -108,6 +46,7 @@
             ->queryRow();
     return $ExpCust;
     }
+    //Most users customers
     function getMostUsers($MostUsers){
        $MostUsers = Yii::app()->db->createCommand()
             ->select($MostUsers)
@@ -116,6 +55,7 @@
             ->queryRow();
     return $MostUsers;
     }
+    //Longest time of services customer
     function getLongestCust($TheLongest){
        $LongestCust = Yii::app()->db->createCommand()
             ->select($TheLongest)
@@ -149,35 +89,16 @@ $data2 = $dbCommand2->queryAll();
 $json2 = json_encode($data2);
 
 /* Line DataSet */
-//$sqlMinDate = "SELECT min(updatefrom) FROM almab_customers WHERE updatefrom != 0";
-//$runSqlMinDate = Yii::app()->db->createCommand($sqlMinDate);
-//$resSqlMinDate = $runSqlMinDate ->queryAll();
-//$asResSqlMinDate = implode("",$resSqlMinDate[0]);
-
-//$sqlMaxDate = "SELECT max(updateto) FROM almab_customers WHERE updateto != 0";
-//$runSqlMaxDate = Yii::app()->db->createCommand($sqlMaxDate);
-//$resSqlMaxDate = $runSqlMaxDate->queryAll();
-//$asResSqlMaxDate = implode("",$resSqlMaxDate[0]);
-
 $begin = new DateTime("2006-07-30");
 $end = new DateTime(date("Y-m-d"));
 
 $daterange = new DatePeriod($begin, new DateInterval('P1D'), $end);
+$data3 = array();
 $data3 = array();
 $label = array();
 foreach($daterange as $obj){
     $date = $obj->format("Y-m-d");
     $label[] = $date;
     $data3[] = implode("",(Yii::app()->db->createCommand("SELECT COUNT(*) as data FROM almab_customers WHERE updatefrom <= :date AND updateto >= :date")->bindValue('date',$date)->queryRow()));
+    $data4[] = implode("",(Yii::app()->db->createCommand("SELECT COUNT(*) as data FROM almab_customers WHERE updateto <= :date")->bindValue('date',$date)->queryRow()));
 }
-
-//$data3 = array();
-//$label3 = array();
-//foreach ($daterange as $obj) {
-//    $date = $obj->format("Y-m-d");
-//    $sql3 = "SELECT COUNT(*) FROM almab_customers WHERE updatefrom <= $date AND updateto >= $date";
-//    $dbCommand3 = Yii::app()->db->createCommand($sql3);
-//    $data3 = $dbCommand3->queryAll();
-//    $data3[] = $obj['data3'];
-//    $label3[] = $obj['label3'];
-//}

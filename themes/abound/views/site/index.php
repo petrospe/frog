@@ -6,17 +6,17 @@ $baseUrl = Yii::app()->theme->baseUrl;
 ?>
 <?php
 if (Yii::app()->user->isSuperuser) {
-    require_once Yii::app()->basePath . '/../themes/abound/views/site/customFunctions.php';
+    require_once Yii::app()->basePath . '/../themes/abound/views/site/column2Functions.php';
+    require_once Yii::app()->basePath . '/../themes/abound/views/site/dashboardFunctions.php';
     echo "<div class='row-fluid'>
             <div class='span3 '>
                   <div class='stat-block'>
                     <ul>
-                          <li class='stat-graph inlinebar' id='weekly-visit'></li>
                           <li class='stat-count'><span>".implode("",getMonthCust("updatefrom"))."</span><span>Monthly Sales. Ratio ".(implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))."</span></li>";
                           if((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))>0){
-                              echo "<li class='stat-percent'><span class='text-success stat-percent'>".number_format(((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))*100/(implode("",getMonthCust("updatefrom")))),1)."%</span></li>";
+                              echo "<li class='stat-percent'><span class='text-success'>".number_format(((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))*100/(implode("",getMonthCust("updatefrom")))),1)."%</span></li>";
                           }  else {
-                              echo "<li class='stat-percent'><span class='text-error stat-percent'>".number_format(((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))*100/(implode("",getMonthCust("updatefrom")))),1)."%</span></li>";
+                              echo "<li class='stat-percent'><span class='text-error'>".number_format(((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))*100/(implode("",getMonthCust("updatefrom")))),1)."%</span></li>";
                           }
     echo "          </ul>
                   </div>
@@ -24,12 +24,11 @@ if (Yii::app()->user->isSuperuser) {
             <div class='span3 '>
                   <div class='stat-block'>
                     <ul>
-                          <li class='stat-graph inlinebar' id='new-visits'></li>
                           <li class='stat-count'><span>".implode("",getYearCust("updatefrom"))."</span><span>Yearly Sales. Ratio ".(implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))."</span></li>";
                           if((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))>0){
-                              echo "<li class='stat-percent'><span class='text-success stat-percent'>".number_format(((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))*100/implode("",getYearCust("updateto"))),1)."%</span></li>";
+                              echo "<li class='stat-percent'><span class='text-success'>".number_format(((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))*100/implode("",getYearCust("updateto"))),1)."%</span></li>";
                           }  else {
-                              echo "<li class='stat-percent'><span class='text-error stat-percent'>".number_format(((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))*100/implode("",getYearCust("updateto"))),1)."%</span></li>";
+                              echo "<li class='stat-percent'><span class='text-error'>".number_format(((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))*100/implode("",getYearCust("updateto"))),1)."%</span></li>";
                           }
     echo "          </ul>
                   </div>
@@ -51,9 +50,9 @@ if (Yii::app()->user->isSuperuser) {
                   <div class='stat-block'>
                     <ul>";
                         if(strlen(implode("",getLongestCust("descr")))>10){
-                            echo "<li class='stat-count'><span style='font-size:12px;'>".substr((implode("",getLongestCust("descr"))), 0, 29)."...</span><span>Long time service from ".implode("",getLongestCust("updatefrom"))."</span></li>";
+                            echo "<li class='stat-count'><span style='font-size:12px;'>".substr((implode("",getLongestCust("descr"))), 0, 29)."...</span><span>Services from ".implode("",getLongestCust("updatefrom"))."</span></li>";
                         } else {
-                            echo "<li class='stat-count'><span>".substr((implode("",getLongestCust("descr"))), 0, 23)."...</span><span>Long time service</span></li>";
+                            echo "<li class='stat-count'><span>".substr((implode("",getLongestCust("descr"))), 0, 23)."...</span><span>Services from</span></li>";
                         }
     echo "                <li class='stat-percent'><span class='text-success stat-percent'>".((implode("",getLongestCust("updateto")))-(implode("",getLongestCust("updatefrom"))))."</span></li>
                     </ul>
@@ -238,7 +237,6 @@ if (Yii::app()->user->isSuperuser) {
 ?>
         <script>
         /* line */
-//		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 		var lineChartData = {
 			labels : <?php echo json_encode($label); ?>,
 			datasets : [
@@ -252,16 +250,16 @@ if (Yii::app()->user->isSuperuser) {
 					pointHighlightStroke : "rgba(220,220,220,1)",
 					data : <?php echo json_encode($data3); ?>
 				},
-//				{
-//					label: "My Second dataset",
-//					fillColor : "rgba(151,187,205,0.2)",
-//					strokeColor : "rgba(151,187,205,1)",
-//					pointColor : "rgba(151,187,205,1)",
-//					pointStrokeColor : "#fff",
-//					pointHighlightFill : "#fff",
-//					pointHighlightStroke : "rgba(151,187,205,1)",
-//					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-//				}
+				{
+					label: "Inactive Services",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : <?php echo json_encode($data4); ?>
+				}
 			]
 
 		}
