@@ -144,7 +144,11 @@ if (Yii::app()->user->isSuperuser) {
 			'dataProvider'=>$dataProvider1,
 			'template'=>"{items}",
 			'columns'=>array(
-				'id',
+				array(
+                                    'name'  => 'id',
+                                    'value' => 'CHtml::link($data->id,Yii::app()->createUrl("AlmabCustomers/view",array("id"=>$data->primaryKey)))',
+                                    'type'  => 'raw',
+                                ),
                                 array(
                                     'name'=>'Customer Name',
                                     'value'=>'$data->descr',
@@ -181,8 +185,12 @@ if (Yii::app()->user->isSuperuser) {
                'dataProvider'=>$dataProvider2,
                'template'=>"{items}",
                'columns'=>array(
-                       'id',
                        array(
+                            'name'  => 'id',
+                            'value' => 'CHtml::link($data->id,Yii::app()->createUrl("AlmabCustomers/view",array("id"=>$data->primaryKey)))',
+                            'type'  => 'raw',
+                        ),
+                        array(
                            'name'=>'Customer Name',
                            'value'=>'$data->descr',
                        ),
