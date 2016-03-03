@@ -240,7 +240,23 @@ if (Yii::app()->user->isSuperuser) {
         $this->endWidget();
     
 } else {
+    require_once Yii::app()->basePath . '/../themes/abound/views/site/dashboard2Functions.php';
     echo 'Customer Page';
+     echo "<div class='row-fluid'>
+            <div class='span3 '>
+                  <div class='stat-block'>
+                    <ul>
+                          <li class='stat-count'><span>".implode("",getExpirationInfo("descr"))."</span><span>Services Expiration date</span></li>";
+                          if((implode("",getExpirationInfo("updateto"))>NOW())){
+                              echo "<li class='stat-percent'><span class='text-success'>".implode("",getMonthCust("updateto"))."</span></li>";
+                          }  else {
+                              echo "<li class='stat-percent'><span class='text-error'>".implode("",getMonthCust("updateto"))."</span></li>";
+                          }
+    echo "          </ul>
+                  </div>
+            </div>
+        </div>
+        ";
 }
 ?>
         
