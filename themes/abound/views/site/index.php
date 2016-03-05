@@ -241,20 +241,34 @@ if (Yii::app()->user->isSuperuser) {
     
 } else {
     require_once Yii::app()->basePath . '/../themes/abound/views/site/dashboard2Functions.php';
-    echo 'Customer Page';
+    //print_r($username);
      echo "<div class='row-fluid'>
-            <div class='span3 '>
+            <div class='span4 '>
                   <div class='stat-block'>
                     <ul>
                           <li class='stat-count'><span>".implode("",getExpirationInfo("descr"))."</span><span>Services Expiration date</span></li>";
-                          if((implode("",getExpirationInfo("updateto"))>NOW())){
-                              echo "<li class='stat-percent'><span class='text-success'>".implode("",getMonthCust("updateto"))."</span></li>";
+                          if((implode("",getExpirationInfo("updateto")) > (new \DateTime())->format('Y-m-d'))){
+                              echo "<li class='stat-percent'><span class='text-success'>".implode("",getExpirationInfo("updateto"))."</span></li>";
                           }  else {
-                              echo "<li class='stat-percent'><span class='text-error'>".implode("",getMonthCust("updateto"))."</span></li>";
+                              echo "<li class='stat-percent'><span class='text-error'>".implode("",getExpirationInfo("updateto"))."</span></li>";
                           }
     echo "          </ul>
                   </div>
-            </div>
+            </div>";
+//    echo "<div class='span4 '>
+//                  <div class='stat-block'>
+//                    <ul>
+//                          <li class='stat-count'><span>".implode("",getUpdateVersion("version"))."</span><span>User Update Version</span></li>";
+//                          if((implode("",getUpdateVersion("updateto")) > (new \DateTime())->format('Y-m-d'))){
+//                              echo "<li class='stat-percent'><span class='text-success'>".implode("",getUpdateVersion("updateto"))."</span></li>";
+//                          }  else {
+//                              echo "<li class='stat-percent'><span class='text-error'>".implode("",getUpdateVersion("updateto"))."</span></li>";
+//                          }
+//    echo "          </ul>
+//                  </div>
+//            </div>";
+    
+    echo "
         </div>
         ";
 }

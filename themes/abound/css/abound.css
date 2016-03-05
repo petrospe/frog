@@ -175,7 +175,7 @@ margin-right: 10px;
 }
 
 .stat-block .stat-count {
-width: 75%;
+width: 70%;
 }
 
 .stat-block .stat-count span:last-child {
@@ -201,7 +201,7 @@ text-align: center !important;
 }
 
 .stat-percent{
-width: 25%;
+width: 30%;
 font-size: 20px;
 font-weight: bold;
  }
