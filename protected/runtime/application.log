@@ -2841,3 +2841,498 @@ Stack trace:
 REQUEST_URI=/frog/index.php
 HTTP_REFERER=http://localhost/frog/index.php?r=user/login
 ---
+2016/03/06 09:49:22 [error] [php] Array to string conversion (/Library/WebServer/Documents/frog/framework/db/CDbCommand.php:275)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(261): getUpdateVersion()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#6 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (22)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 09:55:59 [error] [php] Array to string conversion (/Library/WebServer/Documents/frog/framework/db/CDbCommand.php:275)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(261): getUpdateVersion()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#6 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (22)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 09:56:14 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:261)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 09:56:45 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:261)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 09:56:46 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:261)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 10:00:26 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:261)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 10:01:55 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:261)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 10:03:52 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:261)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 10:13:35 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updateto' in 'field list'. The SQL statement executed was: SELECT `updateto`
+FROM `almab_updates`
+WHERE :updateto < upddate.
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (23)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (262)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 10:13:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updateto' in 'field list'. The SQL statement executed was: SELECT `updateto`
+FROM `almab_updates`
+WHERE :updateto < upddate' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php(23): CDbCommand->queryRow()
+#2 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(262): getUpdateVersion('updateto')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#4 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#8 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/frog/index.php
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/03/06 10:16:51 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:262)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (262)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 10:18:42 [error] [php] Array to string conversion (/Library/WebServer/Documents/frog/framework/db/CDbCommand.php:275)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(261): getUpdateVersion()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#2 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#6 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (22)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 10:19:50 [error] [php] Array to string conversion (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:261)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 10:20:22 [error] [php] Array to string conversion (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:261)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 10:21:41 [error] [php] max(): When only one parameter is given, it must be an array (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:19)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (19)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 11:19:42 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'au.version)' in 'field list'. The SQL statement executed was: SELECT `au`.`version)`
+FROM `almab_customerupdate` `cup`
+JOIN `almab_customers` `ac` ON ac.id=cup.customerid
+JOIN `almab_updates` `au` ON au.id=cup.updateid
+WHERE cup.customeris=:username.
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (36)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (273)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 11:19:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'au.version)' in 'field list'. The SQL statement executed was: SELECT `au`.`version)`
+FROM `almab_customerupdate` `cup`
+JOIN `almab_customers` `ac` ON ac.id=cup.customerid
+JOIN `almab_updates` `au` ON au.id=cup.updateid
+WHERE cup.customeris=:username' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php(36): CDbCommand->queryRow()
+#2 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(273): getInstalledVersion('au.version)')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#4 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#8 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/frog/index.php
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/03/06 11:20:21 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'au.version)' in 'field list'. The SQL statement executed was: SELECT `au`.`version)`
+FROM `almab_customerupdate` `cup`
+JOIN `almab_customers` `ac` ON ac.id=cup.customerid
+JOIN `almab_updates` `au` ON au.id=cup.updateid
+WHERE cup.customerid=:username.
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (36)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (273)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 11:20:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'au.version)' in 'field list'. The SQL statement executed was: SELECT `au`.`version)`
+FROM `almab_customerupdate` `cup`
+JOIN `almab_customers` `ac` ON ac.id=cup.customerid
+JOIN `almab_updates` `au` ON au.id=cup.updateid
+WHERE cup.customerid=:username' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php(36): CDbCommand->queryRow()
+#2 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(273): getInstalledVersion('au.version)')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#4 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#8 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/frog/index.php
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/03/06 11:20:53 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'version)' in 'field list'. The SQL statement executed was: SELECT `version)`
+FROM `almab_customerupdate` `cup`
+JOIN `almab_customers` `ac` ON ac.id=cup.customerid
+JOIN `almab_updates` `au` ON au.id=cup.updateid
+WHERE cup.customerid=:username.
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (36)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (273)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 11:20:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'version)' in 'field list'. The SQL statement executed was: SELECT `version)`
+FROM `almab_customerupdate` `cup`
+JOIN `almab_customers` `ac` ON ac.id=cup.customerid
+JOIN `almab_updates` `au` ON au.id=cup.updateid
+WHERE cup.customerid=:username' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php(36): CDbCommand->queryRow()
+#2 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(273): getInstalledVersion('version)')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#4 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#8 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/frog/index.php
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/03/06 11:20:54 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'version)' in 'field list'. The SQL statement executed was: SELECT `version)`
+FROM `almab_customerupdate` `cup`
+JOIN `almab_customers` `ac` ON ac.id=cup.customerid
+JOIN `almab_updates` `au` ON au.id=cup.updateid
+WHERE cup.customerid=:username.
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (36)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (273)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 11:20:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'version)' in 'field list'. The SQL statement executed was: SELECT `version)`
+FROM `almab_customerupdate` `cup`
+JOIN `almab_customers` `ac` ON ac.id=cup.customerid
+JOIN `almab_updates` `au` ON au.id=cup.updateid
+WHERE cup.customerid=:username' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php(36): CDbCommand->queryRow()
+#2 /Library/WebServer/Documents/frog/themes/abound/views/site/index.php(273): getInstalledVersion('version)')
+#3 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#4 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', NULL, true)
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', NULL, true)
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): CController->render('index')
+#8 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/frog/index.php
+HTTP_REFERER=http://localhost/frog/index.php?r=user/login
+---
+2016/03/06 11:21:25 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:273)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (273)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 11:23:25 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:273)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (273)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 11:26:21 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:273)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (273)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 11:27:05 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:273)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (273)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 11:27:06 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:273)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (273)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)

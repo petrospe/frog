@@ -255,18 +255,30 @@ if (Yii::app()->user->isSuperuser) {
     echo "          </ul>
                   </div>
             </div>";
-//    echo "<div class='span4 '>
-//                  <div class='stat-block'>
-//                    <ul>
-//                          <li class='stat-count'><span>".implode("",getUpdateVersion("version"))."</span><span>User Update Version</span></li>";
-//                          if((implode("",getUpdateVersion("updateto")) > (new \DateTime())->format('Y-m-d'))){
-//                              echo "<li class='stat-percent'><span class='text-success'>".implode("",getUpdateVersion("updateto"))."</span></li>";
-//                          }  else {
-//                              echo "<li class='stat-percent'><span class='text-error'>".implode("",getUpdateVersion("updateto"))."</span></li>";
-//                          }
-//    echo "          </ul>
-//                  </div>
-//            </div>";
+    echo "<div class='span4 '>
+                  <div class='stat-block'>
+                    <ul>
+                          <li class='stat-count'><span>".implode("",getUpdateVersion("max(version)"))."</span><span>User Update Version</span></li>";
+                          if((implode("",getExpirationInfo("updateto")) > (new \DateTime())->format('Y-m-d'))){
+                              echo "<li class='stat-percent'><span class='text-success'>".implode("",getUpdateVersion("max(upddate)"))."</span></li>";
+                          }  else {
+                              echo "<li class='stat-percent'><span class='text-error'>".implode("",getUpdateVersion("max(upddate)"))."</span></li>";
+                          }
+    echo "          </ul>
+                  </div>
+            </div>";
+    echo "<div class='span4 '>
+                  <div class='stat-block'>
+                    <ul>
+                          <li class='stat-count'><span>".implode("",getInstalledVersion("max(au.version)"))."</span><span>User Installed Version</span></li>";
+                          if((implode("",getExpirationInfo("updateto")) > (new \DateTime())->format('Y-m-d'))){
+                              echo "<li class='stat-percent'><span class='text-success'>".implode("",getInstalledVersion("max(condate)"))."</span></li>";
+                          }  else {
+                              echo "<li class='stat-percent'><span class='text-error'>".implode("",getInstalledVersion("max(condate)"))."</span></li>";
+                          }
+    echo "          </ul>
+                  </div>
+            </div>";
     
     echo "
         </div>
