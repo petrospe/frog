@@ -3336,3 +3336,1278 @@ REQUEST_URI=/frog/index.php
 in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (273)
 in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
 in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 13:21:06 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:249)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (249)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 13:25:59 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:17)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (17)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 13:33:50 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:20)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (20)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 13:44:23 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:20)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (20)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 14:43:13 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:17)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (17)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 14:47:55 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:17)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (17)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 14:47:56 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:17)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (17)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 14:48:22 [error] [php] Missing argument 1 for getExpirationInfo(), called in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php on line 246 and defined (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:4)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (4)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (246)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 14:50:53 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:17)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (17)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 14:51:51 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:17)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (17)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 14:51:53 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:17)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (17)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 14:52:40 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:17)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (17)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 14:52:42 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:17)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (17)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 14:52:42 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:17)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#3 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#5 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#8 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (17)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 15:01:13 [error] [php] Undefined variable: updateto (/Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php:24)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/dashboard2Functions.php (24)
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (261)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+2016/03/06 15:01:55 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:280)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (280)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 15:03:51 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:280)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (280)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 15:03:52 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:280)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (280)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 15:05:51 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:280)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (280)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 15:06:17 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:280)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (280)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 15:08:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php:62
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/components/RightsFilter.php(57): RController->accessDenied()
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): RightsFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('support')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=support
+HTTP_REFERER=http://localhost/frog/index.php
+---
+2016/03/06 15:08:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php:62
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/components/RightsFilter.php(57): RController->accessDenied()
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): RightsFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('files')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=files
+HTTP_REFERER=http://localhost/frog/index.php
+---
+2016/03/06 15:08:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php:62
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/components/RightsFilter.php(57): RController->accessDenied()
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): RightsFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('support')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=support
+HTTP_REFERER=http://localhost/frog/index.php
+---
+2016/03/06 15:10:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'You are not aut...')
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('support/admin')
+#9 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/frog/index.php?r=support/admin
+HTTP_REFERER=http://localhost/frog/index.php?r=support
+---
+2016/03/06 15:11:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(RWebUser), 'You are not aut...')
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('support/admin')
+#9 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/frog/index.php?r=support/admin
+HTTP_REFERER=http://localhost/frog/index.php?r=support
+---
+2016/03/06 15:11:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php:62
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/components/RightsFilter.php(57): RController->accessDenied()
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): RightsFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('files')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=files
+HTTP_REFERER=http://localhost/frog/index.php?r=support
+---
+2016/03/06 16:00:10 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:272)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (272)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:00:43 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:272)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (272)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:02:37 [error] [php] implode(): Invalid arguments passed (/Library/WebServer/Documents/frog/themes/abound/views/site/index.php:272)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Library/WebServer/Documents/frog/framework/web/CController.php(869): SiteController->renderFile()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /Library/WebServer/Documents/frog/protected/controllers/SiteController.php(35): SiteController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(286): SiteController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php
+in /Library/WebServer/Documents/frog/themes/abound/views/site/index.php (272)
+in /Library/WebServer/Documents/frog/protected/controllers/SiteController.php (35)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:18:19 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:18:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Customer' in 'field list'. The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:18:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Customer' in 'field list'. The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:22:37 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:22:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:22:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:26:49 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:26:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Customer' in 'field list'. The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:26:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Customer' in 'field list'. The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:29:28 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:29:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Customer' in 'field list'. The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:29:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Customer' in 'field list'. The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:32:55 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known (/Library/WebServer/Documents/frog/themes/abound/views/site/column2Functions.php:13)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): AlmabCustomersController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(784): AlmabCustomersController->renderFile()
+#3 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(80): AlmabCustomersController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): AlmabCustomersController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): RightsFilter->filter()
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): AlmabCustomersController->filterRights()
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): AlmabCustomersController->filterAccessControl()
+#14 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#16 /Library/WebServer/Documents/frog/framework/web/CController.php(265): AlmabCustomersController->runActionWithFilters()
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): AlmabCustomersController->run()
+#18 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+in /Library/WebServer/Documents/frog/themes/abound/views/site/column2Functions.php (13)
+in /Library/WebServer/Documents/frog/themes/abound/views/layouts/column2.php (39)
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (80)
+2016/03/06 16:33:14 [error] [php] file_get_contents(http://cachefly.cachefly.net/1mb.test): failed to open stream: Operation timed out (/Library/WebServer/Documents/frog/themes/abound/views/site/column2Functions.php:13)
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(126): require()
+#1 /Library/WebServer/Documents/frog/framework/web/CBaseController.php(95): AlmabCustomersController->renderInternal()
+#2 /Library/WebServer/Documents/frog/framework/web/CController.php(784): AlmabCustomersController->renderFile()
+#3 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(80): AlmabCustomersController->render()
+#4 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#5 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): AlmabCustomersController->runAction()
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): RightsFilter->filter()
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): AlmabCustomersController->filterRights()
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): AlmabCustomersController->filterAccessControl()
+#14 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#16 /Library/WebServer/Documents/frog/framework/web/CController.php(265): AlmabCustomersController->runActionWithFilters()
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): AlmabCustomersController->run()
+#18 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Library/WebServer/Documents/frog/index.php(13): CWebApplication->run()
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+in /Library/WebServer/Documents/frog/themes/abound/views/site/column2Functions.php (13)
+in /Library/WebServer/Documents/frog/themes/abound/views/layouts/column2.php (39)
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (80)
+2016/03/06 16:34:15 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:34:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:34:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:34:52 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:34:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:34:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:38:35 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:38:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:38:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:41:58 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:41:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:41:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:54:30 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:54:30 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:54:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:57:38 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:57:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:57:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:57:44 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:57:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:57:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:57:48 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:57:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:57:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:57:51 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:57:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:57:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 16:57:55 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:57:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (74)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 16:57:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`nbalma_gr_nbalmav2`.`profiles`, CONSTRAINT `user_profile_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE). The SQL statement executed was: INSERT INTO `almab_customers` (`iscustom`, `descr`, `email`, `guid`, `updatefrom`, `updateto`, `dbserial`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in /Library/WebServer/Documents/frog/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(74): CActiveRecord->save()
+#3 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionCreate()
+#4 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#15 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#17 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#18 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/create
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 17:03:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory' in /Library/WebServer/Documents/frog/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Library/WebServer/Documents/frog/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Library/WebServer/Documents/frog/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Library/WebServer/Documents/frog/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(2386): CActiveRecord->getDbConnection()
+#6 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(AlmabCustomers))
+#7 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(137): CActiveRecord->__construct('search')
+#9 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionAdmin()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#15 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#21 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('admin')
+#23 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#24 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/admin
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 17:03:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory' in /Library/WebServer/Documents/frog/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Library/WebServer/Documents/frog/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Library/WebServer/Documents/frog/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Library/WebServer/Documents/frog/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(2386): CActiveRecord->getDbConnection()
+#6 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(AlmabCustomers))
+#7 /Library/WebServer/Documents/frog/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php(137): CActiveRecord->__construct('search')
+#9 /Library/WebServer/Documents/frog/framework/web/actions/CInlineAction.php(49): AlmabCustomersController->actionAdmin()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#14 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#15 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#21 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('admin')
+#23 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('almabCustomers/...')
+#24 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/frog/index.php?r=almabCustomers/admin
+HTTP_REFERER=http://localhost/frog/index.php?r=almabCustomers/create
+---
+2016/03/06 17:04:28 [warning] [application] Failed to set unsafe attribute "iscustom" of "AlmabCustomers".
+in /Library/WebServer/Documents/frog/protected/controllers/AlmabCustomersController.php (73)
+in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php (36)
+in /Library/WebServer/Documents/frog/index.php (13)
+2016/03/06 17:13:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php:62
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/components/RightsFilter.php(57): RController->accessDenied()
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): RightsFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('support/create')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=support/create
+HTTP_REFERER=http://localhost/frog/index.php?r=support
+---
+2016/03/06 17:14:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php:62
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/components/RightsFilter.php(57): RController->accessDenied()
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): RightsFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('files')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=files
+HTTP_REFERER=http://localhost/frog/index.php?r=support
+---
+2016/03/06 17:14:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php:62
+Stack trace:
+#0 /Library/WebServer/Documents/frog/protected/modules/rights/components/RightsFilter.php(57): RController->accessDenied()
+#1 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(38): RightsFilter->preFilter(Object(CFilterChain))
+#2 /Library/WebServer/Documents/frog/protected/modules/rights/components/RController.php(36): CFilter->filter(Object(CFilterChain))
+#3 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): RController->filterRights(Object(CFilterChain))
+#4 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Library/WebServer/Documents/frog/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Library/WebServer/Documents/frog/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Library/WebServer/Documents/frog/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Library/WebServer/Documents/frog/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Library/WebServer/Documents/frog/framework/web/CController.php(291): CFilterChain->run()
+#10 /Library/WebServer/Documents/frog/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('support/view')
+#13 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/frog/index.php?r=support/view&id=1
+HTTP_REFERER=http://localhost/frog/index.php?r=support
+---
+2016/03/06 17:19:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customer".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('customer')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=customer
+---
+2016/03/06 17:19:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customer".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('customer')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=customer
+---
+2016/03/06 17:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customer/index".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('customer/index')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=customer/index
+HTTP_REFERER=http://localhost/frog/index.php
+---
+2016/03/06 17:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/customer/index".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('/customer/index')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=/customer/index
+---
+2016/03/06 17:29:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customer/index".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('customer/index')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=customer/index
+HTTP_REFERER=http://localhost/frog/index.php
+---
+2016/03/06 17:30:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customer/index".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('customer/index')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=customer/index
+HTTP_REFERER=http://localhost/frog/index.php
+---
+2016/03/06 17:33:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "customer/index".' in /Library/WebServer/Documents/frog/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('customer/index')
+#1 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/frog/index.php?r=customer/index
+HTTP_REFERER=http://localhost/frog/index.php/customer/index
+---
+2016/03/06 17:33:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "customer".' in /Library/WebServer/Documents/frog/framework/web/CController.php:483
+Stack trace:
+#0 /Library/WebServer/Documents/frog/framework/web/CController.php(270): CController->missingAction('customer')
+#1 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(282): CController->run('customer')
+#2 /Library/WebServer/Documents/frog/framework/web/CWebApplication.php(141): CWebApplication->runController('site/customer/i...')
+#3 /Library/WebServer/Documents/frog/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Library/WebServer/Documents/frog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/frog/index.php?r=site/customer/index
+---
