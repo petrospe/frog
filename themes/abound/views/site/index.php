@@ -6,8 +6,145 @@ $baseUrl = Yii::app()->theme->baseUrl;
 ?>
 <?php
 if (Yii::app()->user->isSuperuser) {
-    require_once Yii::app()->basePath . '/../themes/abound/views/site/column2Functions.php';
-    require_once Yii::app()->basePath . '/../themes/abound/views/site/dashboardFunctions.php';
+    /* Custom functions used on dashboard for abound theme */
+    //All Customers
+    function getAllCustomers(){
+       $AllCustomers = Yii::app()->db->createCommand()
+            ->select(array('count(*)'))
+            ->from('almab_customers')
+            ->queryRow();
+    return $AllCustomers;
+    }
+    //Active Customers
+    function getActiveCustomers(){
+       $ActiveCustomers = Yii::app()->db->createCommand()
+            ->select(array('count(*)'))
+            ->from('almab_customers')
+            ->where('updateto > NOW()')
+            ->queryRow();
+    return $ActiveCustomers;
+    }
+    //Inactive Customers
+    function getInactiveCustomers(){
+       $InactiveCustomers = Yii::app()->db->createCommand()
+            ->select(array('count(*)'))
+            ->from('almab_customers')
+            ->where('updateto < NOW()')
+            ->queryRow();
+    return $InactiveCustomers;
+    }
+    //Users
+    function getTotalUsers(){
+       $TotalUsers = Yii::app()->db->createCommand()
+            ->select(array('sum(SUBSTRING_INDEX(SUBSTRING_INDEX(dbserial, "-", 2), "-", -1))'))
+            ->from('almab_customers')
+            ->where('descr IS NOT NULL')
+            ->queryRow();
+    return $TotalUsers;
+    }
+    //Contracts
+    function getActiveContracts(){
+       $ActiveContracts = Yii::app()->db->createCommand()
+            ->select(array('count(*)'))
+            ->from('almab_contracts')
+            ->where('ContractEndDate > NOW()')
+            ->queryRow();
+    return $ActiveContracts;
+    }
+    //The last customer
+    function getNewbie($f){
+       $Newbie = Yii::app()->db->createCommand()
+            ->select($f)
+            ->from('almab_customers')
+            ->order('id DESC')
+            ->limit('1')
+            ->queryRow();
+    return $Newbie;
+    }
+    //New customers per month
+    function getMonthCust($updmonth){
+       $MonthCust = Yii::app()->db->createCommand()
+            ->select('count(*)')
+            ->from('almab_customers')
+            ->where($updmonth.' BETWEEN DATE_FORMAT(CURRENT_DATE - INTERVAL 1 MONTH, "%Y-%m-01") AND LAST_DAY(CURRENT_DATE - INTERVAL 1 MONTH)')
+            ->queryRow();
+    return $MonthCust;
+    }
+    //New customers per year
+    function getYearCust($updyear){
+       $YearCust = Yii::app()->db->createCommand()
+            ->select('count(*)')
+            ->from('almab_customers')
+            ->where($updyear.' BETWEEN DATE_SUB(NOW(), INTERVAL 365 DAY) AND NOW()')
+            ->queryRow();
+    return $YearCust;
+    }
+    //Expiring services in current 30 days
+    function getExpCust($expdate){
+       $ExpCust = Yii::app()->db->createCommand()
+            ->select('count(*)')
+            ->from('almab_customers')
+            ->where($expdate.' BETWEEN NOW() AND DATE_ADD(NOW(), INTERVAL 30 DAY)')
+            ->queryRow();
+    return $ExpCust;
+    }
+    //Most users customers
+    function getMostUsers($MostUsers){
+       $MostUsers = Yii::app()->db->createCommand()
+            ->select($MostUsers)
+            ->from('almab_customers')
+            ->where('(SUBSTRING_INDEX(SUBSTRING_INDEX(dbserial, "-", 2), "-", -1)) = (select MAX(CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(dbserial, "-", 2), "-", -1)AS UNSIGNED)) FROM `almab_customers`)')
+            ->queryRow();
+    return $MostUsers;
+    }
+    //Longest time of services customer
+    function getLongestCust($TheLongest){
+       $LongestCust = Yii::app()->db->createCommand()
+            ->select($TheLongest)
+            ->from('almab_customers')
+            ->where('updateto > NOW() AND (updateto - updatefrom = (Select max(updateto - updatefrom) from `almab_customers`))')
+            ->queryRow();
+    return $LongestCust;
+    }
+    function getResultLabels(){
+       $LongestCust = Yii::app()->db->createCommand()
+            ->select('distinct SUBSTRING_INDEX(dbserial, "-", 1) as Alma')
+            ->from('almab_customers')
+            ->queryRow();
+    return $LongestCust;
+    }
+
+    /* Doughnut DataSet */        
+    $data1 = array();
+    $sql1 = "SELECT CONCAT('Alma ',SUBSTRING_INDEX(dbserial, '-', 1)) as label, COUNT(SUBSTRING_INDEX(dbserial, '-', 1)) as value FROM `almab_customers`WHERE SUBSTRING_INDEX(dbserial, '-', 1) IS NOT null GROUP BY SUBSTRING_INDEX(dbserial, '-', 1)";
+    $dbCommand1 = Yii::app()->db->createCommand($sql1);
+    $data1 = $dbCommand1->queryAll();
+
+    $json1 = json_encode($data1);
+
+    /* Pie DataSet */        
+    $data2 = array();
+    $sql2 = "SELECT CONCAT('Alma ',SUBSTRING_INDEX(dbserial, '-', 1)) as label, COUNT(SUBSTRING_INDEX(dbserial, '-', 1)) as value FROM `almab_customers`WHERE SUBSTRING_INDEX(dbserial, '-', 1) IS NOT null AND updateto > NOW() GROUP BY SUBSTRING_INDEX(dbserial, '-', 1)";
+    $dbCommand2 = Yii::app()->db->createCommand($sql2);
+    $data2 = $dbCommand2->queryAll();
+
+    $json2 = json_encode($data2);
+
+    /* Line DataSet */
+    $begin = new DateTime("2006-07-30");
+    $end = new DateTime(date("Y-m-d"));
+
+    $daterange = new DatePeriod($begin, new DateInterval('P1D'), $end);
+    $data3 = array();
+    $data3 = array();
+    $label = array();
+    foreach($daterange as $obj){
+        $date = $obj->format("Y-m-d");
+        $label[] = $date;
+        $data3[] = implode("",(Yii::app()->db->createCommand("SELECT COUNT(*) as data FROM almab_customers WHERE updatefrom <= :date AND updateto >= :date")->bindValue('date',$date)->queryRow()));
+        $data4[] = implode("",(Yii::app()->db->createCommand("SELECT COUNT(*) as data FROM almab_customers WHERE updateto <= :date")->bindValue('date',$date)->queryRow()));
+    }
+    require_once Yii::app()->basePath . '/../themes/abound/js/plugins/scripts.js.php';
     echo "  <div class='row-fluid'>
                 <div class='span3 '>
                     <div class='stat-block'>
@@ -218,8 +355,70 @@ if (Yii::app()->user->isSuperuser) {
                     </div>";
         $this->endWidget();
 } else {
-    require_once Yii::app()->basePath . '/../themes/abound/views/site/dashboard2Functions.php';
-    //print_r($username);
+/* Custom functions used on dashboard for abound theme */
+    //User Expiration Info
+    function getExpirationInfo($f){
+       $username = Yii::app()->user->name;
+       $ExpirationInfo = Yii::app()->db->createCommand()
+            ->select($f)
+            ->from('almab_customers ac')
+            ->join('users u', 'ac.id=u.username')
+            ->where('u.username=:username')
+            ->bindValue(':username',$username)
+            ->queryRow();
+        return $ExpirationInfo;
+    }
+    //User Update Version
+    function getUpdateVersion($r){
+       if(!empty(getExpirationInfo("updateto"))){
+           $updateto = implode("",getExpirationInfo("updateto"));
+           $UpdateVersion = Yii::app()->db->createCommand()
+                 ->select($r)
+                 ->from('almab_updates')
+                 ->where('upddate < :updateto')
+                 ->bindValue(':updateto',$updateto)
+                 ->queryRow();
+            return $UpdateVersion;
+        }
+    }
+    //User Installed Version
+    function getInstalledVersion($t){
+       if(!empty(getExpirationInfo("updateto"))){
+            $username = Yii::app()->user->name;
+            $record=AlmabCustomerupdate::model()->find(array(
+                'select'=>'customerid',
+                'condition'=>'customerid=:customerid',
+                'params'=>array(':customerid'=>$username))
+              );
+            if($record === null){
+                return;
+            } else {
+                $InstalledVersion = Yii::app()->db->createCommand()
+                     ->select($t)
+                     ->from('almab_customerupdate cup')
+                     ->join('almab_customers ac', 'ac.id=cup.customerid')
+                     ->join('almab_updates au', 'au.id=cup.updateid')
+                     ->where('cup.customerid=:username')
+                     ->bindValue(':username',$username)
+                     ->queryRow();
+                return $InstalledVersion;
+            }
+       }   
+    }
+    //User Software version
+    function getSoftwareVersion($w){
+        if(!empty(getExpirationInfo("updateto"))){
+            $username = Yii::app()->user->name;
+            $updateto = implode("",getExpirationInfo("updateto"));
+            $SoftwareVersion = Yii::app()->db->createCommand()
+                 ->select($w)
+                 ->from('files')
+                 ->where('create_date < :updateto AND file_category_id=1 AND file_support_id = 1')
+                 ->bindValue(':updateto',$updateto)
+                 ->queryRow();
+            return $SoftwareVersion;
+        }
+    }
     echo "  <div class='row-fluid'>";
     if(!empty(getExpirationInfo("descr"))){
     echo "      <div class='span4 '>
@@ -302,6 +501,7 @@ if (Yii::app()->user->isSuperuser) {
                     <li>Show the full installation software version. Click above the version to downloaded it.</li>
                     <li>If you have a custom program Version you can view all needed files and download it</li>
                     <li>If you need support or help about software, see the <strong>Support Section</strong></li>
+                    <li>At <strong>Files Section</strong> you will find useful files about your product installation</li>
                     <li>Check the video about product installation</li>
                     <li>Contact us via contact form for further support</li>
                 </ul>
@@ -331,9 +531,31 @@ if (Yii::app()->user->isSuperuser) {
                     </div>
                 </div>";
     }
+    echo "  <div class='row-fluid'>";
+    echo "      <div class='span6 '>";
+    $this->beginWidget('zii.widgets.CPortlet', array(
+                      'title'=>'<span class="icon-th-list"></span>Alma Client Setup',
+              ));
+    echo "          <div align='center' class='embed-responsive embed-responsive-16by9'>
+                        <video controls loop class='embed-responsive-item' width='100%'>
+                            <source src='http://www.nbalma.gr/files/Alma-Client-Setup.mp4' type='video/mp4'>
+                        </video>
+                    </div>";
+    $this->endWidget();
+    echo "      </div>";
+    echo "      <div class='span6 '>";
+    $this->beginWidget('zii.widgets.CPortlet', array(
+                      'title'=>'<span class="icon-th-list"></span>Alma Full Setup',
+              ));
+    echo "          <div align='center' class='embed-responsive embed-responsive-16by9'>
+                        <video controls loop class='embed-responsive-item' width='100%'>
+                            <source  src='http://www.nbalma.gr/files/Alma-Full_Setup.mp4' type='video/mp4'>
+                        </video>
+                    </div>";
+    $this->endWidget();
+    echo "      </div>";
     
     echo "  </div>
         </div>";
 }
 ?>
-        
