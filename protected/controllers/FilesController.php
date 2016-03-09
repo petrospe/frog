@@ -147,7 +147,16 @@ class FilesController extends RController
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Files');
+                if( Yii::app()->user->isSuperuser){
+                    $dataProvider=new CActiveDataProvider('Files');
+                }else{
+                    $dataProvider=new CActiveDataProvider('Files', array(
+                        'criteria'=>array(
+                                    'condition' => 'file_customer_id = ' . Yii::app()->user->name,
+                                    'condition' => 'file_support_id = 1',
+                        ),
+                    ));
+                }
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));

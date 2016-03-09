@@ -107,8 +107,8 @@ class Files extends CActiveRecord
 		$criteria->compare('t.file_size',$this->file_size,true);
 		$criteria->compare('t.file_path',$this->file_path,true);
 		$criteria->compare('t.file_category_id',$this->file_category_id,true);
-                $criteria->compare('t.file_category_id',$this->file_support_id,true);
-                $criteria->compare('t.file_category_id',$this->file_customer_id,true);
+                $criteria->compare('t.file_support_id',$this->file_support_id,true);
+                $criteria->compare('t.file_customer_id',$this->file_customer_id,true);
 		$criteria->compare('t.create_date',$this->create_date,true);
 		$criteria->compare('t.modification_date',$this->modification_date,true);
                 $criteria->compare('almabcustomers.descr', $this->almabcustomers_search, true ); // related field
