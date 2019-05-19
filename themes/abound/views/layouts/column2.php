@@ -48,12 +48,16 @@
                 $ds = disk_total_space("/");
                 //$freegb = $df / 1073741824;
             /* Memory Usage */
+                $memuse = 0;
                 function convert($size)
                     {
                         $unit=array('b','kb','mb','gb','tb','pb');
                         return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
                     }
-                $memuse = convert(memory_get_usage(true));
+                if(!empty(convert(memory_get_usage(true))) && is_int(convert(memory_get_usage(true)))){
+                    $memuse = convert(memory_get_usage(true));
+                }
+                
             /* CPU Usage */
                 function get_server_cpu_usage(){
                         $load = sys_getloadavg();

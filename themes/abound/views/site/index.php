@@ -150,11 +150,11 @@ if (Yii::app()->user->isSuperuser) {
                     <div class='stat-block'>
                         <ul>
                               <li class='stat-count'><span>".implode("",getMonthCust("updatefrom"))."</span><span>Monthly Sales. Ratio ".(implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))."</span></li>";
-                              if((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))>0){
-                                  echo "<li class='stat-percent'><span class='text-success'>".number_format(((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))*100/(implode("",getMonthCust("updatefrom")))),1)."%</span></li>";
-                              }  else {
-                                  echo "<li class='stat-percent'><span class='text-error'>".number_format(((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))*100/(implode("",getMonthCust("updatefrom")))),1)."%</span></li>";
-                              }
+//                              if((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))>0){
+//                                  echo "<li class='stat-percent'><span class='text-success'>".number_format(((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))*100/(implode("",getMonthCust("updatefrom")))),1)."%</span></li>";
+//                              }  else {
+//                                  echo "<li class='stat-percent'><span class='text-error'>".number_format(((implode("",getMonthCust("updatefrom"))-implode("",getMonthCust("updateto")))*100/(implode("",getMonthCust("updatefrom")))),1)."%</span></li>";
+//                              }
     echo "              </ul>
                     </div>
                 </div>
@@ -186,12 +186,22 @@ if (Yii::app()->user->isSuperuser) {
                 <div class='span3 '>
                     <div class='stat-block'>
                         <ul>";
-                            if(strlen(implode("",getLongestCust("descr")))>10){
-                                echo "<li class='stat-count'><span style='font-size:12px;'>".substr((implode("",getLongestCust("descr"))), 0, 29)."...</span><span>Services from ".implode("",getLongestCust("updatefrom"))."</span></li>";
-                            } else {
-                                echo "<li class='stat-count'><span>".substr((implode("",getLongestCust("descr"))), 0, 23)."...</span><span>Services from</span></li>";
+                            if(!empty(getLongestCust("descr"))){
+                                if(strlen(implode("",getLongestCust("descr")))>10){
+                                    echo "<li class='stat-count'><span style='font-size:12px;'>".substr((implode("",getLongestCust("descr"))), 0, 29)."...</span><span>Services from ".implode("",getLongestCust("updatefrom"))."</span></li>";
+                                } else {
+                                    echo "<li class='stat-count'><span>".substr((implode("",getLongestCust("descr"))), 0, 23)."...</span><span>Services from</span></li>";
+                                }
                             }
-    echo "                  <li class='stat-percent'><span class='text-success stat-percent'>".((implode("",getLongestCust("updateto")))-(implode("",getLongestCust("updatefrom"))))."</span></li>
+                            $longestCust=array();
+                            if(!empty(getLongestCust("updateto")) && !empty(getLongestCust("updatefrom"))){
+                                $updateto = getLongestCust("updateto");
+                                $updatefrom = getLongestCust("updatefrom");
+                                $end_date = strtotime($updateto["updateto"]); 
+                                $start_date = strtotime($updatefrom["updatefrom"]); 
+                                $longestCust=($end_date-$start_date);
+                            }
+    echo "                  <li class='stat-percent'><span class='text-success stat-percent'>".floor($longestCust / (60*60*24*365) )."</span></li>
                         </ul>
                     </div>
                 </div>
