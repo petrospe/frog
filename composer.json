@@ -2,7 +2,7 @@
     "name": "peter/frog",
     "description": "A subscription admin crm",
     "require": {
-        "php": "^7.4.0"
+        "php": "^7.3.0"
     },
     "require-dev": {},
     "license": "mit"
