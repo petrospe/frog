@@ -39,7 +39,7 @@ return array(
 	//'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 	// uncomment the following lines to use a MySQL database
 	
-	'connectionString' => 'mysql:host='.getEnvVariable('DB_HOST').';dbname='.getEnvVariable('DB_NAME'),
+	'connectionString' => getEnvVariable('DATABASE_URL'),
 	'emulatePrepare' => true,
 	'username' => getEnvVariable('DB_USER'),
 	'password' => getEnvVariable('DB_PASSWORD'),

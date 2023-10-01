@@ -5,6 +5,5 @@
         "php": "^7.4.0"
     },
     "require-dev": {},
-    "license": "mit",
-    "ext-pdo_mysql": "*"
+    "license": "mit"
 }
