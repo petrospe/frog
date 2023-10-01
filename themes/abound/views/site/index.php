@@ -162,10 +162,10 @@ if (Yii::app()->user->isSuperuser) {
                   <div class='stat-block'>
                         <ul>
                               <li class='stat-count'><span>".implode("",getYearCust("updatefrom"))."</span><span>Yearly Sales. Ratio ".(implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))."</span></li>";
-                              if((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))>0){
+                              if (!empty(array_filter(getYearCust("updatefrom")))) {
                                   echo "<li class='stat-percent'><span class='text-success'>".number_format(((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))*100/implode("",getYearCust("updateto"))),1)."%</span></li>";
                               }  else {
-                                  echo "<li class='stat-percent'><span class='text-error'>".number_format(((implode("",getYearCust("updatefrom"))-implode("",getYearCust("updateto")))*100/implode("",getYearCust("updateto"))),1)."%</span></li>";
+                                  echo "<li class='stat-percent'><span class='text-error'>0%</span></li>";
                               }
     echo "              </ul>
                     </div>
@@ -193,7 +193,7 @@ if (Yii::app()->user->isSuperuser) {
                                     echo "<li class='stat-count'><span>".substr((implode("",getLongestCust("descr"))), 0, 23)."...</span><span>Services from</span></li>";
                                 }
                             }
-                            $longestCust=array();
+                            $longestCust=null;
                             if(!empty(getLongestCust("updateto")) && !empty(getLongestCust("updatefrom"))){
                                 $updateto = getLongestCust("updateto");
                                 $updatefrom = getLongestCust("updatefrom");

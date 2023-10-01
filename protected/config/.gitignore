@@ -1,4 +1,3 @@
 # Ignore files in this directory
-*database.php
 # Except this file
 !.gitignore
