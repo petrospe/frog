@@ -38,7 +38,7 @@ function getEnvVariable($envvariable){
 return array(
 	//'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 	// uncomment the following lines to use a MySQL database
-	
+	'class'=>'CDbConnection',
 	'connectionString' => getEnvVariable('DATABASE_URL'),
 	'emulatePrepare' => true,
 	'username' => getEnvVariable('DB_USER'),
