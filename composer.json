@@ -6,12 +6,20 @@
         "ext-bcmath": "*",
         "ext-calendar": "*",
         "ext-exif": "*",
+        "ext-ftp": "*",
         "ext-gettext": "*",
         "ext-gd": "*",
         "ext-intl": "*",
         "ext-ldap": "*",
         "ext-mbstring": "*",
-        "ext-pcntl": "*"
+        "ext-pcntl": "*",
+        "ext-pdo_sqlite": "*",
+        "ext-shmop": "*",
+        "ext-soap": "*",
+        "ext-sodium": "*",
+        "ext-sqlite3": "*",
+        "ext-xmlrpc": "*",
+        "ext-xsl": "*"
     },
     "require-dev": {},
     "license": "mit"

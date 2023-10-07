@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "25b9a31394f8a70db56230e3e4b14187",
+    "content-hash": "926c5dc7077b557dbaa62e35f92d692c",
     "packages": [],
     "packages-dev": [],
     "aliases": [],
@@ -17,12 +17,20 @@
         "ext-bcmath": "*",
         "ext-calendar": "*",
         "ext-exif": "*",
+        "ext-ftp": "*",
         "ext-gettext": "*",
         "ext-gd": "*",
         "ext-intl": "*",
         "ext-ldap": "*",
         "ext-mbstring": "*",
-        "ext-pcntl": "*"
+        "ext-pcntl": "*",
+        "ext-pdo_sqlite": "*",
+        "ext-shmop": "*",
+        "ext-soap": "*",
+        "ext-sodium": "*",
+        "ext-sqlite3": "*",
+        "ext-xmlrpc": "*",
+        "ext-xsl": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
