@@ -9,6 +9,7 @@
         "ext-gettext": "*",
         "ext-gd": "*",
         "ext-intl": "*",
+        "ext-ldap": "*",
         "ext-mbstring": "*"
     },
     "require-dev": {},
