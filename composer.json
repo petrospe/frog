@@ -10,7 +10,8 @@
         "ext-gd": "*",
         "ext-intl": "*",
         "ext-ldap": "*",
-        "ext-mbstring": "*"
+        "ext-mbstring": "*",
+        "ext-pcntl": "*"
     },
     "require-dev": {},
     "license": "mit"
