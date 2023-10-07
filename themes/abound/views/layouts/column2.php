@@ -42,6 +42,10 @@
                 $end = time();
                 $time = $end - $start;
                 $size = $size / 1048576;
+                $speed = 0;
+                if(!empty($time) && $time>0){
+                  $speed = $size / $time; // MB/s, 4MB/s is the 100%
+                }
                 $speed = $size / $time; // MB/s, 4MB/s is the 100%
             /* Server free space */
                 $df = disk_free_space("/"); //bytes
