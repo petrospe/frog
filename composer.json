@@ -6,6 +6,7 @@
         "ext-bcmath": "*",
         "ext-calendar": "*",
         "ext-exif": "*",
+        "ext-gettext": "*",
         "ext-gd": "*",
         "ext-intl": "*",
         "ext-mbstring": "*"

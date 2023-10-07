@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d28bc71a0750da957d1f78e8339c31a",
+    "content-hash": "603ceed47a652fb60b9987efbc90de5a",
     "packages": [],
     "packages-dev": [],
     "aliases": [],
@@ -17,6 +17,7 @@
         "ext-bcmath": "*",
         "ext-calendar": "*",
         "ext-exif": "*",
+        "ext-gettext": "*",
         "ext-gd": "*",
         "ext-intl": "*",
         "ext-mbstring": "*"
