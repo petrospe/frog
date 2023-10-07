@@ -46,7 +46,6 @@
                 if(!empty($time) && $time>0){
                   $speed = $size / $time; // MB/s, 4MB/s is the 100%
                 }
-                $speed = $size / $time; // MB/s, 4MB/s is the 100%
             /* Server free space */
                 $df = disk_free_space("/"); //bytes
                 $ds = disk_total_space("/");
