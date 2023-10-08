@@ -35,6 +35,24 @@ function getEnvVariable($envvariable){
     return $value;
 }
 
+// List of allowed IP addresses
+$allowedIPs = array('127.0.0.1',getEnvVariable('DB_ALLOWED_IPS'));
+
+// Get the client's IP address
+$clientIP = $_SERVER['REMOTE_ADDR'];
+
+// Check if the client's IP is in the list of allowed IPs
+if (in_array($clientIP, $allowedIPs) || $clientIP === '::1') {
+    // Access is allowed
+} else {
+    // Access is forbidden
+    // Set the Content-Type header to text/html
+    header('Content-Type: text/html');
+    // Set the Content-Length header to 123
+    header('Content-Length: 123');
+    die("403 Forbidden - Access Denied");
+}
+
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
