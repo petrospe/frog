@@ -46,10 +46,6 @@ if (in_array($clientIP, $allowedIPs) || $clientIP === '::1') {
     // Access is allowed
 } else {
     // Access is forbidden
-    // Set the Content-Type header to text/html
-    header('Content-Type: text/html');
-    // Set the Content-Length header to 123
-    header('Content-Length: 123');
     die("403 Forbidden - Access Denied");
 }
 
