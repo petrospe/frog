@@ -36,7 +36,7 @@ function getEnvVariable($envvariable){
 }
 
 // List of allowed IP addresses
-$allowedIPs = array('127.0.0.1', getEnvVariable('DB_USER'));
+$allowedIPs = array('127.0.0.1',getEnvVariable('DB_ALLOWED_IPS'));
 
 // Get the client's IP address
 $clientIP = $_SERVER['REMOTE_ADDR'];
