@@ -39,10 +39,14 @@ function getEnvVariable($envvariable){
 $allowedIPs = array('127.0.0.1',getEnvVariable('DB_ALLOWED_IPS'));
 
 // Get the client's IP address
-$clientIP = $_SERVER['REMOTE_ADDR'];
+$ip = isset($_SERVER['HTTP_CLIENT_IP']) 
+    ? $_SERVER['HTTP_CLIENT_IP'] 
+    : (isset($_SERVER['HTTP_X_FORWARDED_FOR']) 
+      ? $_SERVER['HTTP_X_FORWARDED_FOR'] 
+      : $_SERVER['REMOTE_ADDR']);
 
 // Check if the client's IP is in the list of allowed IPs
-if (in_array($clientIP, $allowedIPs) || $clientIP === '::1') {
+if (in_array($ip, $allowedIPs)) {
     // Access is allowed
 } else {
     // Access is forbidden
